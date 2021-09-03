@@ -1,0 +1,10 @@
+// ver 1.1.0
+
+// by default, use WIN displayer
+WindowStyle = "GTK";
+
+NegFiltersDebug    += { "NETL", "DBINTERFACE: HSTMT created", "DBINTERFACE: HSTMT destroyed", "GETDATE()"  };
+NegFiltersInfo     += { "NETL" };
+NegFiltersWarning  += { };
+
+InsertConfigFilename = {"shard.cfg"};

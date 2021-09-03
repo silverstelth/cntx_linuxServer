@@ -1,0 +1,35 @@
+//ver 1.2.2
+
+DisplayedVariables += { "", "@OnlineUsers|ConnectPlayers", "Connections|Connections" };
+// 1 : use security, 0: don't use security
+// in particular Service, it must be defined.
+UseSecurity = 1;
+DefaultMode = "DES";
+
+DelayConnection = 0;
+
+NotifyInterval = 10;
+CycleInterval = 10;
+
+limitIncomingConnections = 10000;
+limitRecieveQueueSize = 160000;
+limitRefuseConnections = 20000;
+
+AuthorizeTime = 100000;
+
+// Common Options
+SId = 1;
+
+DontUseNS = 1;
+DontUseAES = 0;
+
+WindowStyle = "GTK";
+NegFiltersDebug    += { "NETL", "DBINTERFACE: HSTMT created", "DBINTERFACE: HSTMT destroyed", "GETDATE()"  };
+NegFiltersInfo     += { "NETL" };
+NegFiltersWarning  += { };
+
+UserUpdateTime = 100;
+MinUserUpdateTime = 0;
+UniNetUpdateTime = 10;
+
+InsertConfigFilename = {"main.cfg"};

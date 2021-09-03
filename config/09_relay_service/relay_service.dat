@@ -1,0 +1,12 @@
+// ver 1.1.0
+
+DisplayedVariables += { "", "@Services|nsServices" };
+
+// by default, use WIN displayer
+WindowStyle = "GTK";
+
+NegFiltersDebug    += { "NETL" };
+NegFiltersInfo     += { "NETL" };
+NegFiltersWarning  += { };
+
+InsertConfigFilename = {"shard.cfg"};

@@ -1,0 +1,31 @@
+﻿// ver 1.1.1
+
+DisplayedVariables += { "", "@OnlineFS|frontends", "@OnlineUsers|users", "NbOnlineUsers|OnlineUsersNumber" };
+
+// short name of the frontend service
+FrontendServiceName = "FS";
+
+ExpectedServices = { };
+
+// Access level to shard
+// 0: only dev
+// 1: dev + privileged users (see also OpenGroups variable)
+// 2: open for all
+ShardOpen = 2;
+
+// File that contains the ShardOpen value (used to override ShardOpen value through AES' command createFile)
+// For instance, ShardOpen default value is 0, then AES creates a file to set ShardOpen to 2. If WS crashes,
+// ShardOpen is still set to 2 when it relaunches...
+ShardOpenStateFile = "";
+
+// Privileged Groups
+OpenGroups = "";
+
+// by default, use WIN displayer
+WindowStyle = "GTK";
+
+NegFiltersDebug    += { "NETL", "DBINTERFACE: HSTMT created", "DBINTERFACE: HSTMT destroyed", "GETDATE()"  };
+NegFiltersInfo     += { "NETL" };
+NegFiltersWarning  += { };
+
+InsertConfigFilename = {"shard.cfg"};

@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Scopes >
+    <Scope name="BirthPos_BaoKu" >
+        <Space name="Point" pos="-508.034 10.4596 -246.498" />
+        <Space name="Box1" type="Box" pos="-507.655 11.4851 -248.924" size="37.7097 1 25.9346" />
+    </Scope>
+    <Scope name="BirthPos_ChuSheng" >
+        <Space name="Point" pos="5.69739 0 1570.4" />
+    </Scope>
+    <Scope name="BirthPos_GongDeBei" >
+        <Space name="Point" pos="1.3415 0 1917.74" rot="-4.37114e-008 0 1 0" />
+        <Space name="Box1" type="Box" pos="1.106 1.48576 1916.98" size="29.239 1 29.239" />
+    </Scope>
+    <Scope name="BirthPos_LianGenYinDao" >
+        <Space name="Point" pos="61.7928 1518.83 -5310" rot="-4.37114e-008 0 1 0" />
+    </Scope>
+    <Scope name="BirthPos_ShaoZhiQu" >
+        <Space name="Point" pos="478.44 9.71766 366.532" rot="0.707107 0 -0.707107 0" />
+        <Space name="Box1" type="Box" pos="480.788 10.6977 366.486" size="31.778 1 31.778" />
+    </Scope>
+    <Scope name="BirthPos_ShenLong" >
+        <Space name="Point" pos="-170 -24 3140" rot="-0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="BirthPos_XieXin" >
+        <Space name="Point" pos="-321.28 0 926.105" rot="0.707107 0 0.707107 0" />
+        <Space name="Box1" type="Box" pos="-321.058 -0.0515556 926.306" size="35.287 1 35.287" />
+    </Scope>
+    <Scope name="BirthPos_ZhuDian" >
+        <Space name="Point" pos="-0.56924 29.1156 -202.443" />
+        <Space name="Box1" type="Box" pos="-0.569864 29.5524 -202.708" size="30.905 1 30.905" />
+    </Scope>
+    <Scope name="BirthPos_ZiLiao" >
+        <Space name="Point" pos="-485.037 10.2444 366.154" rot="0.707107 0 0.707107 0" />
+        <Space name="Box1" type="Box" pos="-486.364 10.4219 366.204" size="35.918 1 35.918" />
+    </Scope>
+    <Scope name="CamPos_BeiWen" >
+        <Space name="Point" pos="1.26305 42.1893 1925.51" rot="0.00555376 -5.40591e-005 0.999938 0.00961616" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu" >
+        <Space name="Point" pos="-463.724 10.3459 -328.19" rot="0.374451 0 0.927247 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_1" >
+        <Space name="Point" pos="-524.801 11.902 -418.188" rot="-0.127411 0 0.99185 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_10" >
+        <Space name="Point" pos="-480.545 11.978 -377.545" rot="0.236981 0 0.971515 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_11" >
+        <Space name="Point" pos="-548.477 11.987 -379.368" rot="-0.31289 0 0.949789 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_12" >
+        <Space name="Point" pos="-472.193 11.986 -379.368" rot="0.232465 0 0.972605 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_2" >
+        <Space name="Point" pos="-495.493 11.903 -418.188" rot="0.127411 0 0.99185 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_3" >
+        <Space name="Point" pos="-532.828 11.905 -417.103" rot="-0.104339 0 0.994542 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_4" >
+        <Space name="Point" pos="-486.028 11.904 -417.103" rot="0.14582 0 0.989311 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_5" >
+        <Space name="Point" pos="-541.733 11.906 -415.994" rot="-0.125107 0 0.992143 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_6" >
+        <Space name="Point" pos="-476.669 11.904 -415.994" rot="0.184763 0 0.982783 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_7" >
+        <Space name="Point" pos="-531.56 11.976 -376.358" rot="-0.250497 0 0.968117 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_8" >
+        <Space name="Point" pos="-488.769 11.973 -376.358" rot="0.21662 0 0.976256 0" />
+    </Scope>
+    <Scope name="NPCPos_BaoKu_9" >
+        <Space name="Point" pos="-539.735 11.981 -377.545" rot="-0.266205 0 0.963916 0" />
+    </Scope>
+    <Scope name="NPCPos_ChiBaoNpc1" >
+        <Space name="Point" pos="649.125 11.774 349.55" rot="0.485484 0 0.874245 0" />
+    </Scope>
+    <Scope name="NPCPos_ChiBaoNpc2" >
+        <Space name="Point" pos="649.406 11.7726 383.715" rot="0.894011 0 0.448044 0" />
+    </Scope>
+    <Scope name="NPCPos_ChiBaoNpc3" >
+        <Space name="Point" pos="657.893 11.7639 344.301" rot="0.539325 0 0.842098 0" />
+    </Scope>
+    <Scope name="NPCPos_ChiBaoNpc4" >
+        <Space name="Point" pos="658.91 11.7616 390.037" rot="0.861825 0 0.507206 0" />
+    </Scope>
+    <Scope name="NPCPos_ChiBaoNpc5" >
+        <Space name="Point" pos="670.185 11.7547 348.034" rot="0.600373 0 0.79972 0" />
+    </Scope>
+    <Scope name="NPCPos_ChiBaoNpc6" >
+        <Space name="Point" pos="670.106 11.7554 386.18" rot="0.817787 0 0.575521 0" />
+    </Scope>
+    <Scope name="NPCPos_FangWenLu" >
+        <Space name="Point" pos="-167.422 29.0254 -294.088" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="NPCPos_GDTarget_0" >
+        <Space name="Point" pos="-22.5 35.577 -370" />
+    </Scope>
+    <Scope name="NPCPos_GDTarget_1" >
+        <Space name="Point" pos="-7.5 35.577 -370" />
+    </Scope>
+    <Scope name="NPCPos_GDTarget_2" >
+        <Space name="Point" pos="-22.5 35.577 -385" />
+    </Scope>
+    <Scope name="NPCPos_GDTarget_3" >
+        <Space name="Point" pos="-7.5 35.577 -385" />
+    </Scope>
+    <Scope name="NPCPos_GDTarget_4" >
+        <Space name="Point" pos="7.5 35.577 -370" />
+    </Scope>
+    <Scope name="NPCPos_GDTarget_5" >
+        <Space name="Point" pos="22.5 35.577 -370" />
+    </Scope>
+    <Scope name="NPCPos_GDTarget_6" >
+        <Space name="Point" pos="7.5 35.577 -385" />
+    </Scope>
+    <Scope name="NPCPos_GDTarget_7" >
+        <Space name="Point" pos="22.5 35.577 -385" />
+    </Scope>
+    <Scope name="NPCPos_Gongpin_1" >
+        <Space name="Point" pos="-42.8313 34.951 -434.71" rot="0.0747914 0 -0.997199 0" />
+    </Scope>
+    <Scope name="NPCPos_Gongpin_2" >
+        <Space name="Point" pos="42.188 35.0354 -436.416" rot="0.0608864 0 0.998145 0" />
+    </Scope>
+    <Scope name="NPCPos_Gongpin_3" >
+        <Space name="Point" pos="-49.8286 34.951 -434.351" rot="0.097933 0 -0.995193 0" />
+    </Scope>
+    <Scope name="NPCPos_Gongpin_4" >
+        <Space name="Point" pos="50.0661 34.951 -435.303" rot="0.0840536 0 0.996461 0" />
+    </Scope>
+    <Scope name="NPCPos_Gongpin_5" >
+        <Space name="Point" pos="-57.0685 34.951 -433.671" rot="0.100244 0 -0.994963 0" />
+    </Scope>
+    <Scope name="NPCPos_Gongpin_6" >
+        <Space name="Point" pos="57.7939 34.951 -434.487" rot="-0.131493 0 -0.991317 0" />
+    </Scope>
+    <Scope name="NPCPos_GroupDance_0" >
+        <Space name="Point" pos="-55 35.577 -375" />
+    </Scope>
+    <Scope name="NPCPos_GroupDance_1" >
+        <Space name="Point" pos="-40 35.577 -375" />
+    </Scope>
+    <Scope name="NPCPos_GroupDance_2" >
+        <Space name="Point" pos="-55 35.577 -390" />
+    </Scope>
+    <Scope name="NPCPos_GroupDance_3" >
+        <Space name="Point" pos="-40 35.577 -390" />
+    </Scope>
+    <Scope name="NPCPos_GroupDance_4" >
+        <Space name="Point" pos="40 35.577 -375" />
+    </Scope>
+    <Scope name="NPCPos_GroupDance_5" >
+        <Space name="Point" pos="55 35.577 -375" />
+    </Scope>
+    <Scope name="NPCPos_GroupDance_6" >
+        <Space name="Point" pos="40 35.577 -390" />
+    </Scope>
+    <Scope name="NPCPos_GroupDance_7" >
+        <Space name="Point" pos="55 35.577 -390" />
+    </Scope>
+    <Scope name="NPCPos_JiSi" >
+        <Space name="Point" pos="79.7877 34.951 -391.683" rot="0.270595 0 0.962693 0" />
+    </Scope>
+    <Scope name="NPCPos_LiuYan" >
+        <Space name="Point" pos="133 28.925 -261" rot="0.707107 0 0.707107 0" />
+    </Scope>
+    <Scope name="NPCPos_ShenMing" >
+        <Space name="Point" pos="466.69 39.229 1038.4" rot="0.993593 0 0.113014 0" />
+    </Scope>
+    <Scope name="NPCPos_XianBao" >
+        <Space name="Point" pos="588.319 10.199 398.161" rot="0.863692 0 0.504021 0" />
+    </Scope>
+    <Scope name="NPCPos_XianBaoZhongJiang" >
+        <Space name="Point" pos="634.859 11.7951 352.452" rot="-4.37114e-008 0 1 0" size="0.9 0.9 0.9" />
+    </Scope>
+    <Scope name="NPCPos_XinXiang" >
+        <Space name="Point" pos="-349.11 -0.998085 946.018" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="NPCPos_YiShiZhongJiang" >
+        <Space name="Point" pos="16.9028 35.0767 -409.62" rot="0.185281 0 0.982686 0" size="0.9 0.9 0.9" />
+    </Scope>
+    <Scope name="NPCPos_YingBinXianZi01" >
+        <Space name="Point" pos="-23 28.925 -225" rot="0.258819 0 -0.965926 0" />
+    </Scope>
+    <Scope name="NPCPos_YingBinXianZi02" >
+        <Space name="Point" pos="23 28.925 -225" rot="0.258819 0 0.965926 0" />
+    </Scope>
+    <Scope name="NPCPos_YingBinXianZi03" >
+        <Space name="Point" pos="490 10.099 340.932" rot="0.5 0 0.866025 0" />
+    </Scope>
+    <Scope name="NPCPos_YingBinXianZi04" >
+        <Space name="Point" pos="490 10.099 394.466" rot="0.866025 0 0.5 0" />
+    </Scope>
+    <Scope name="NPCPos_YingBinXianZi05" >
+        <Space name="Point" pos="-485 10.1 389.183" rot="0.866025 0 -0.5 0" />
+    </Scope>
+    <Scope name="NPCPos_YingBinXianZi06" >
+        <Space name="Point" pos="-485 10.1 340.597" rot="0.584666 0 -0.811274 0" />
+    </Scope>
+    <Scope name="NPCPos_YingBinXianZi07" >
+        <Space name="Point" pos="-534.52 10.015 -248.336" rot="0.32469 0 -0.945821 0" />
+    </Scope>
+    <Scope name="NPCPos_YingBinXianZi08" >
+        <Space name="Point" pos="-484.396 10.015 -247.54" rot="0.276198 0 0.961101 0" />
+    </Scope>
+    <Scope name="NPCPos_You_1" >
+        <Space name="Point" pos="29.4718 35.0767 -406.81" rot="0.132542 0 0.991177 0" />
+    </Scope>
+    <Scope name="NPCPos_YuGang01" >
+        <Space name="Point" pos="180.786 28.925 -445.216" rot="0.331892 0 0.943316 0" />
+    </Scope>
+    <Scope name="NPCPos_YuGang02" >
+        <Space name="Point" pos="-131.132 28.925 -445.553" rot="0.299708 0 0.954031 0" />
+    </Scope>
+    <Scope name="NPCPos_ZhuanYunTai" >
+        <Space name="Point" pos="421.539 7.37663 924.783" />
+    </Scope>
+    <Scope name="NPCPos_ZiLiao" >
+        <Space name="Point" pos="-583.887 10.199 334.092" rot="0.570761 0 -0.821116 0" />
+    </Scope>
+    <Scope name="NPCPos_Zuo_1" >
+        <Space name="Point" pos="-20.017 35.077 -408.478" rot="0.223933 0 -0.974604 0" />
+    </Scope>
+    <Scope name="NPCPos_Zuo_2" >
+        <Space name="Point" pos="-30.917 34.951 -406.979" rot="0.173857 0 -0.984771 0" />
+    </Scope>
+    <Scope name="NPCPos_guzheng_0" >
+        <Space name="Point" pos="-59.1191 34.951 -411.433" rot="0.333171 0 -0.942867 0" />
+    </Scope>
+    <Scope name="NPCPos_guzheng_1" >
+        <Space name="Point" pos="54.2437 34.951 -414.545" rot="0.281559 0 0.959544 0" />
+    </Scope>
+    <Scope name="NPCPos_tsk_appear_0" >
+        <Space name="Point" pos="-22.2941 34.951 -389.063" />
+    </Scope>
+    <Scope name="NPCPos_tsk_appear_1" >
+        <Space name="Point" pos="21.1938 34.951 -389.063" />
+    </Scope>
+    <Scope name="NPCPos_tsk_wreath_0" >
+        <Space name="Point" pos="-22.2287 35.077 -424.063" />
+    </Scope>
+    <Scope name="NPCPos_tsk_wreath_1" >
+        <Space name="Point" pos="21.088 35.077 -424.063" />
+    </Scope>
+    <Scope name="OtherPos_ActResult1" >
+        <Space name="Point" pos="-34 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_ActResult10" >
+        <Space name="Point" pos="70 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_ActResult2" >
+        <Space name="Point" pos="34 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_ActResult3" >
+        <Space name="Point" pos="-43 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_ActResult4" >
+        <Space name="Point" pos="43 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_ActResult5" >
+        <Space name="Point" pos="-52 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_ActResult6" >
+        <Space name="Point" pos="52 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_ActResult7" >
+        <Space name="Point" pos="-61 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_ActResult8" >
+        <Space name="Point" pos="61 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_ActResult9" >
+        <Space name="Point" pos="-70 41.202 -445.5" />
+    </Scope>
+    <Scope name="OtherPos_AutoRiteXianBao" >
+        <Space name="Point" pos="553.405 10.2993 368.056" rot="-0.707107 0 0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_AutoRiteXianDeng" >
+        <Space name="Point" pos="118 28.925 -261" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_BaoKu" >
+        <Space name="Box1" type="Box" pos="-506.676 66.511 -220.748" size="286.694 195.265 363.896" />
+    </Scope>
+    <Scope name="OtherPos_BaoKuTexiao" >
+        <Space name="Point" pos="-509.514 14.5222 -390.11" size="0.543 1 1.002" />
+    </Scope>
+    <Scope name="OtherPos_DanceNpcPos_0" >
+        <Space name="Point" pos="53.323 35.567 -400" rot="0.707107 0 0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_DanceNpcPos_1" >
+        <Space name="Point" pos="-58.323 35.567 -391.183" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_End_XingLi1" >
+        <Space name="Point" pos="-3.6 29.009 -299.673" />
+    </Scope>
+    <Scope name="OtherPos_End_XingLi2" >
+        <Space name="Point" pos="3.6 29.009 -299.673" />
+    </Scope>
+    <Scope name="OtherPos_FangWenBiaoShi_0" >
+        <Space name="Point" pos="-168.671 29.025 -258.144" rot="0.707107 0 -0.707107 0" size="1.153 1.153 1.153" />
+    </Scope>
+    <Scope name="OtherPos_FangWenBiaoShi_1" >
+        <Space name="Point" pos="-168.671 29.025 -331.344" rot="0.707107 0 -0.707107 0" size="1.153 1.153 1.153" />
+    </Scope>
+    <Scope name="OtherPos_FlowerEffect" >
+        <Space name="Cylinder1" type="Cylinder" pos="-0.002 8.3 1767.99" size="123 18 123" />
+    </Scope>
+    <Scope name="OtherPos_FluteSeat_0" >
+        <Space name="Point" pos="0 35 -340" />
+    </Scope>
+    <Scope name="OtherPos_FluteSeat_1" >
+        <Space name="Point" pos="-10 35 -340" />
+    </Scope>
+    <Scope name="OtherPos_FluteSeat_2" >
+        <Space name="Point" pos="10 35 -340" />
+    </Scope>
+    <Scope name="OtherPos_FluteSeat_3" >
+        <Space name="Point" pos="-20 35 -340" />
+    </Scope>
+    <Scope name="OtherPos_FluteSeat_4" >
+        <Space name="Point" pos="20 35 -340" />
+    </Scope>
+    <Scope name="OtherPos_FluteSeat_5" >
+        <Space name="Point" pos="-30 35 -340" />
+    </Scope>
+    <Scope name="OtherPos_FluteSeat_6" >
+        <Space name="Point" pos="30 35 -340" />
+    </Scope>
+    <Scope name="OtherPos_GongDeBei" >
+        <Space name="Box1" type="Box" pos="5.793 0 1981.45" size="200.661 100 178.3" />
+    </Scope>
+    <Scope name="OtherPos_GongzuoTexiao" >
+        <Space name="Point" pos="-0.221584 35.1943 -423.213" />
+    </Scope>
+    <Scope name="OtherPos_Guide_Jisi1" >
+        <Space name="Point" pos="-1.1796 28.7432 -279.312" />
+    </Scope>
+    <Scope name="OtherPos_Guide_Jisi2" >
+        <Space name="Point" pos="68.5395 34.6897 -375.714" rot="0.968562 0 -0.248772 0" />
+    </Scope>
+    <Scope name="OtherPos_Guide_Photo" >
+        <Space name="Point" pos="-632.506 10.199 293.535" rot="0.707107 0 0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_Guide_TargetPoint" >
+        <Space name="Point" pos="5.13159 -1 1476.59" />
+    </Scope>
+    <Scope name="OtherPos_Guide_XiangKuang" >
+        <Space name="Point" pos="670.418 6.91008 -56.1105" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_Guide_Xiexin" >
+        <Space name="Point" pos="-333.122 -0.999973 936.186" rot="0.640388 0 0.768052 0" />
+    </Scope>
+    <Scope name="OtherPos_Guide_ZiLiao" >
+        <Space name="Point" pos="-569.955 10.1989 343.888" rot="0.707107 0 0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_Guzhengzuowei_0" >
+        <Space name="Point" pos="167.201 29.0802 -365.292" rot="0.707107 0 0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_Guzhengzuowei_1" >
+        <Space name="Point" pos="-626.651 10.199 282.317" rot="-4.37114e-008 0 1 0" />
+    </Scope>
+    <Scope name="OtherPos_Guzhengzuoweip_0" >
+        <Space name="Point" pos="165.957 29.0802 -382.445" rot="-4.37114e-008 0 1 0" />
+    </Scope>
+    <Scope name="OtherPos_Guzhengzuoweip_1" >
+        <Space name="Point" pos="-639.507 10.199 282.222" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_HuaLan_0" >
+        <Space name="Point" pos="-49.1009 35.577 -400" />
+    </Scope>
+    <Scope name="OtherPos_HuaLan_1" >
+        <Space name="Point" pos="49.3426 35.577 -400" />
+    </Scope>
+    <Scope name="OtherPos_Hua_Ornament_1" >
+        <Space name="Point" pos="-55 37.013 -458" />
+    </Scope>
+    <Scope name="OtherPos_Hua_Ornament_2" >
+        <Space name="Point" pos="55 37.013 -458" />
+    </Scope>
+    <Scope name="OtherPos_JisiGongzhuo" >
+        <Space name="Point" pos="-0.105204 35.077 -422.353" />
+    </Scope>
+    <Scope name="OtherPos_JisiPrayEff" >
+        <Space name="Point" pos="0.189337 209.084 -364.254" />
+    </Scope>
+    <Scope name="OtherPos_JisiStartPos" >
+        <Space name="Point" pos="0.029 35.077 -409.052" />
+    </Scope>
+    <Scope name="OtherPos_JisiXianglu" >
+        <Space name="Point" pos="-0.216 43.111 -417.867" />
+    </Scope>
+    <Scope name="OtherPos_LetterChair" >
+        <Space name="Point" pos="-430.354 12.056 919.995" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_LetterChairNear" >
+        <Space name="Point" pos="-430.633 12.056 905.288" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_MusicCh" >
+        <Space name="Point" pos="0 35.577 -370" />
+    </Scope>
+    <Scope name="OtherPos_MusicNPC1" >
+        <Space name="Point" pos="20 35.577 -350" />
+    </Scope>
+    <Scope name="OtherPos_MusicNPC2" >
+        <Space name="Point" pos="-20 35.577 -350" />
+    </Scope>
+    <Scope name="OtherPos_MusicNPC3" >
+        <Space name="Point" pos="40 35.577 -370" />
+    </Scope>
+    <Scope name="OtherPos_MusicNPC4" >
+        <Space name="Point" pos="-40 35.577 -370" />
+    </Scope>
+    <Scope name="OtherPos_MusicNPC5" >
+        <Space name="Point" pos="20 35.577 -390" />
+    </Scope>
+    <Scope name="OtherPos_MusicNPC6" >
+        <Space name="Point" pos="-20 35.577 -390" />
+    </Scope>
+    <Scope name="OtherPos_PreHua_1" >
+        <Space name="Point" pos="-31.808 28.925 -283.279" />
+    </Scope>
+    <Scope name="OtherPos_PreHua_2" >
+        <Space name="Point" pos="32.143 29.009 -283.279" />
+    </Scope>
+    <Scope name="OtherPos_PreXingLi_1" >
+        <Space name="Point" pos="-12.478 29.009 -283.279" />
+    </Scope>
+    <Scope name="OtherPos_PreXingLi_2" >
+        <Space name="Point" pos="13.956 29.009 -283.279" />
+    </Scope>
+    <Scope name="OtherPos_PutHL_0" >
+        <Space name="Point" pos="-48.8664 35.577 -410" rot="-4.37114e-008 0 1 0" />
+    </Scope>
+    <Scope name="OtherPos_PutHL_1" >
+        <Space name="Point" pos="49.5874 35.577 -410" rot="-4.37114e-008 0 1 0" />
+    </Scope>
+    <Scope name="OtherPos_Putuan" >
+        <Space name="Point" pos="0.0896881 35.5768 -399.328" />
+    </Scope>
+    <Scope name="OtherPos_QiDaoGongpin_1" >
+        <Space name="Point" pos="-46.447 34.951 -398.874" />
+    </Scope>
+    <Scope name="OtherPos_QiDaoGongpin_2" >
+        <Space name="Point" pos="46 34.951 -398.874" />
+    </Scope>
+    <Scope name="OtherPos_QiDaoGongpin_3" >
+        <Space name="Point" pos="-46.447 34.951 -388.183" />
+    </Scope>
+    <Scope name="OtherPos_QiDaoGongpin_4" >
+        <Space name="Point" pos="46 34.951 -388.183" />
+    </Scope>
+    <Scope name="OtherPos_QiDaoGongpin_5" >
+        <Space name="Point" pos="-46.447 34.951 -377.382" />
+    </Scope>
+    <Scope name="OtherPos_QiDaoGongpin_6" >
+        <Space name="Point" pos="46 34.951 -377.382" />
+    </Scope>
+    <Scope name="OtherPos_QiDaoYou_1" >
+        <Space name="Point" pos="33 35.577 -400" />
+    </Scope>
+    <Scope name="OtherPos_QiDaoZuo_1" >
+        <Space name="Point" pos="-33.323 35.077 -400" />
+    </Scope>
+    <Scope name="OtherPos_QiDaoZuo_2" >
+        <Space name="Point" pos="-38.323 35.577 -388.183" />
+    </Scope>
+    <Scope name="OtherPos_ShaoLuQian" >
+        <Space name="Point" pos="642.562 11.78 366.923" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_ShaoZhiQu" >
+        <Space name="Box1" type="Box" pos="505.926 31.2905 361.173" size="423.47 118.05 338.346" />
+    </Scope>
+    <Scope name="OtherPos_ShengWangBiaoShi_0" >
+        <Space name="Point" pos="-36.955 37.136 -468.12" rot="-4.37114e-008 0 1 0" />
+    </Scope>
+    <Scope name="OtherPos_ShengWangBiaoShi_1" >
+        <Space name="Point" pos="37.396 37.136 -468.12" rot="-4.37114e-008 0 1 0" />
+    </Scope>
+    <Scope name="OtherPos_ShuiXiangRui_Unmount" >
+        <Space name="Box1" type="Box" pos="331.287 -3.02191 2480.42" rot="0.735488 -0.00518998 0.677361 0.0145452" size="10 1 20" />
+    </Scope>
+    <Scope name="OtherPos_XianBaoFire" >
+        <Space name="Point" pos="658.059 11.77 367.012" rot="0.707107 0 0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_XianBaoPrayEff" >
+        <Space name="Point" pos="601.362 142.182 367.65" />
+    </Scope>
+    <Scope name="OtherPos_XianBaoStart" >
+        <Space name="Point" pos="627.503 11.8013 367.052" rot="0.71057 0 -0.703626 0" />
+    </Scope>
+    <Scope name="OtherPos_XianBao_BurnEffect" >
+        <Space name="Point" pos="657.695 20.1054 367.21" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_XianBao_PrayEffect" >
+        <Space name="Point" pos="657.665 22.8053 367.303" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="OtherPos_XiangRui_Unmount" >
+        <Space name="Box1" type="Box" pos="290.79 -1.03576 865.153" rot="0.999971 0 -0.00763919 0" size="20 2 10" />
+    </Scope>
+    <Scope name="OtherPos_XieXin" >
+        <Space name="Box1" type="Box" pos="-348.203 28.7303 918.131" size="310.933 71.5075 342.857" />
+    </Scope>
+    <Scope name="OtherPos_XingLi1" >
+        <Space name="Point" pos="-13 29.009 -303" />
+    </Scope>
+    <Scope name="OtherPos_XingLi2" >
+        <Space name="Point" pos="13 29.009 -303" />
+    </Scope>
+    <Scope name="OtherPos_XingLi_Eff_1" >
+        <Space name="Point" pos="-32 43.5 -311.892" rot="-4.37114e-008 0 -1 0" />
+    </Scope>
+    <Scope name="OtherPos_XingLi_Eff_2" >
+        <Space name="Point" pos="32.16 43.5 -311.892" rot="-4.37114e-008 0 -1 0" />
+    </Scope>
+    <Scope name="OtherPos_XingLi_Hua_1" >
+        <Space name="Point" pos="-31.808 28.925 -304.3" />
+    </Scope>
+    <Scope name="OtherPos_XingLi_Hua_2" >
+        <Space name="Point" pos="32.143 28.925 -304.3" />
+    </Scope>
+    <Scope name="OtherPos_ZhongZi" >
+        <Space name="Point" pos="0.045 0.115459 1768.45" />
+    </Scope>
+    <Scope name="OtherPos_ZhuDian" >
+        <Space name="Box1" type="Box" pos="0.356646 0.00012207 -295.765" size="623.854 387.838 565.507" />
+    </Scope>
+    <Scope name="OtherPos_ZiLiao" >
+        <Space name="Box1" type="Box" pos="-505.613 -0.799957 367.614" size="366.795 231.386 357.097" />
+    </Scope>
+    <Scope name="OtherPos_guzheng_0" >
+        <Space name="Point" pos="-55 34.951 -410" rot="0.945519 0 0.325568 0" />
+    </Scope>
+    <Scope name="OtherPos_guzheng_1" >
+        <Space name="Point" pos="55 34.951 -410" rot="0.945519 0 -0.325568 0" />
+    </Scope>
+    <Scope name="OtherPos_guzheng_yizi_0" >
+        <Space name="Point" pos="-61.1641 34.951 -414.112" rot="0.945519 0 0.325568 0" />
+    </Scope>
+    <Scope name="OtherPos_guzheng_yizi_1" >
+        <Space name="Point" pos="56.4045 34.951 -417.416" rot="0.945519 0 -0.325568 0" />
+    </Scope>
+    <Scope name="OtherPos_huaping" >
+        <Space name="Point" pos="-0.120723 43.111 -421.14" />
+    </Scope>
+    <Scope name="OtherPos_jisitexiao" >
+        <Space name="Point" pos="0.366046 37.1278 -399.951" size="0.815 1 1.738" />
+    </Scope>
+    <Scope name="OtherPos_jisitongzun" >
+        <Space name="Point" pos="14.5084 43.111 -418.369" size="1.25 1 1.25" />
+    </Scope>
+    <Scope name="OtherPos_shenshu_0" >
+        <Space name="Point" pos="-588.906 -0.5 -127.874" rot="0.707107 0 0.707107 0" size="1.5 1.5 1.5" />
+    </Scope>
+    <Scope name="OtherPos_xianbaotexiao" >
+        <Space name="Point" pos="641.101 10.2181 367.369" size="0.5 1 1.25" />
+    </Scope>
+    <Scope name="OtherPos_xiexintexiao" >
+        <Space name="Point" pos="-427.36 12.056 921.393" />
+    </Scope>
+    <Scope name="PetPos_Animal01" >
+        <Space name="Box1" type="Box" pos="-381.632 6.67819 1850.92" size="171.197 16.7521 476.993" />
+    </Scope>
+    <Scope name="PetPos_Animal02" >
+        <Space name="Box1" type="Box" pos="389.903 -1.52588e-005 1969.52" size="201.377 41.3479 781.55" />
+    </Scope>
+    <Scope name="PetPos_Animal03" >
+        <Space name="Box1" type="Box" pos="296.327 -1.00013 807.185" size="130.648 25.137 94.18" />
+    </Scope>
+    <Scope name="PetPos_Animal04" >
+        <Space name="Box1" type="Box" pos="-255 2.522 890" size="60 28.494 250" />
+    </Scope>
+    <Scope name="PetPos_Animal05" >
+        <Space name="Cylinder1" type="Cylinder" pos="281.014 3.36435 1047.98" size="190.095 16.9591 190.095" />
+    </Scope>
+    <Scope name="PetPos_Animal06" >
+        <Space name="Cylinder1" type="Cylinder" pos="-285.533 5.96023 1164.52" size="166.919 23.5457 140.331" />
+    </Scope>
+    <Scope name="PetPos_BirdEnd00" >
+        <Space name="Point" pos="1213.7 400 -32.0666" />
+    </Scope>
+    <Scope name="PetPos_BirdEnd01" >
+        <Space name="Point" pos="1258.58 400 558.181" />
+    </Scope>
+    <Scope name="PetPos_BirdEnd02" >
+        <Space name="Point" pos="1252.15 400 676.229" />
+    </Scope>
+    <Scope name="PetPos_BirdEnd03" >
+        <Space name="Point" pos="1309.98 400 1383.03" />
+    </Scope>
+    <Scope name="PetPos_BirdEnd04" >
+        <Space name="Point" pos="1226.45 400 1884.22" />
+    </Scope>
+    <Scope name="PetPos_BirdEnd05" >
+        <Space name="Point" pos="1200.75 400 2546.04" />
+    </Scope>
+    <Scope name="PetPos_BirdStart00" >
+        <Space name="Point" pos="-1000 400 -100" />
+    </Scope>
+    <Scope name="PetPos_BirdStart01" >
+        <Space name="Point" pos="-1129.51 400 590.824" />
+    </Scope>
+    <Scope name="PetPos_BirdStart02" >
+        <Space name="Point" pos="-1125.27 400 701.931" />
+    </Scope>
+    <Scope name="PetPos_BirdStart03" >
+        <Space name="Point" pos="-1131.7 400 1485.84" />
+    </Scope>
+    <Scope name="PetPos_BirdStart04" >
+        <Space name="Point" pos="-1080.29 400 1884.22" />
+    </Scope>
+    <Scope name="PetPos_BirdStart05" >
+        <Space name="Point" pos="-1048.17 400 2616.72" />
+    </Scope>
+    <Scope name="PetPos_Fish01" >
+        <Space name="Box1" type="Box" pos="-465.824 -18.1 33.725" size="438.283 0.5 75.109" />
+    </Scope>
+    <Scope name="PetPos_Fish02" >
+        <Space name="Box1" type="Box" pos="-771.464 -18.1 -63.508" size="100 0.5 352.608" />
+    </Scope>
+    <Scope name="PetPos_Fish03" >
+        <Space name="Box1" type="Box" pos="789.579 -18.1 -231.542" size="100 0.5 530.489" />
+    </Scope>
+    <Scope name="PetPos_Fish04" >
+        <Space name="Box1" type="Box" pos="115.674 -18 2676.03" size="987.184 0.5 249.447" />
+    </Scope>
+    <Scope name="PetPos_Fish05" >
+        <Space name="Box1" type="Box" pos="-968.621 -18 1755.46" size="100 0.5 563.028" />
+    </Scope>
+    <Scope name="PetPos_Fish06" >
+        <Space name="Box1" type="Box" pos="-599.332 -18 2316.57" rot="0.390619 0 -0.920552 0" size="100 0.5 582.47" />
+    </Scope>
+    <Scope name="PetPos_Fish07" >
+        <Space name="Box1" type="Box" pos="1080.51 -18 1724.46" rot="0.999745 0 -0.022597 0" size="100 0.5 594.113" />
+    </Scope>
+    <Scope name="PetPos_Fish08" >
+        <Space name="Box1" type="Box" pos="861.343 -18 2295.29" rot="0.972639 0 -0.232321 0" size="82.184 0.5 537.199" />
+    </Scope>
+    <Scope name="PetPos_Fish09" >
+        <Space name="Box1" type="Box" pos="463.604 -18.1 38.393" size="433.896 0.5 65.098" />
+    </Scope>
+    <Scope name="PetPos_GuanShangYu01" >
+        <Space name="Box1" type="Box" pos="161.305 55.939 -469.631" rot="0.707107 0 0.707107 0" size="12 15 56" />
+        <Space name="Point" pos="160.396 59.5373 -470.073" rot="0.709155 0 0.705052 0" />
+    </Scope>
+    <Scope name="PetPos_GuanShangYu02" >
+        <Space name="Box1" type="Box" pos="-150.757 55.939 -469.977" rot="0.707107 0 0.707107 0" size="12 15 56" />
+        <Space name="Point" pos="-154.04 59.537 -470.17" />
+    </Scope>
+    <Scope name="PetPos_Hudie01" >
+        <Space name="Box1" type="Box" pos="311.84 18 -234.104" size="42.822 12 323.404" />
+        <Space name="Box2" type="Box" pos="231.747 18 -114.794" size="199.121 12 85.552" />
+        <Space name="Box3" type="Box" pos="-311.04 18 -267.249" size="40.765 12 392.87" />
+        <Space name="Box4" type="Box" pos="-231.747 18 -114.794" size="199.121 12 85.552" />
+    </Scope>
+    <Scope name="PetPos_Hudie02" >
+        <Space name="Box1" type="Box" pos="282.322 10.5871 1445.79" size="57.8598 4.48909 95.3032" />
+        <Space name="Box2" type="Box" pos="-398.346 8.83419 1151.4" size="81.8327 3.83 56.2089" />
+    </Scope>
+    <Scope name="PetPos_ShuiXiangRui" >
+        <Space name="Box1" type="Box" pos="368.529 -17.9 2581.5" rot="0.999724 0 -0.0234945 0" size="150 0.2 100" />
+    </Scope>
+    <Scope name="PetPos_YangYu01" >
+        <Space name="Box1" type="Box" pos="166.192 -18.1 362.462" size="140 0.5 220" />
+        <Space name="Box2" type="Box" pos="180.816 -18.1 196.545" size="110.7 0.5 169.999" />
+    </Scope>
+    <Scope name="PetPos_YangYu02" >
+        <Space name="Box1" type="Box" pos="-166.665 -18.1 361.186" size="140 0.5 220" />
+        <Space name="Box3" type="Box" pos="-181.431 -18.1 195.882" size="112.37 0.5 168.002" />
+    </Scope>
+    <Scope name="Region_BaoKuProcessing" >
+        <Space name="Box1" type="Box" pos="-509.778 11.9488 -401.139" size="100 20 100" />
+    </Scope>
+    <Scope name="Region_Caihong" >
+        <Space name="Point" pos="5.77264 206.345 -568.724" rot="0.999732 0 0 -0.0231639" size="5 5 5" />
+    </Scope>
+    <Scope name="Region_Fenghuang1" >
+        <Space name="Box1" type="Box" pos="29.6073 274.039 1030.98" size="800 2 800" />
+    </Scope>
+    <Scope name="Region_Fenghuang2" >
+        <Space name="Box1" type="Box" pos="19.4831 273.843 290.791" size="800 2 700" />
+    </Scope>
+    <Scope name="Region_GongDeBei" >
+        <Space name="Box1" type="Box" pos="-1.95396 0 1983.59" size="165.63 65.0743 84.9908" />
+    </Scope>
+    <Scope name="Region_JisiProcessing" >
+        <Space name="Box1" type="Box" pos="0.273706 35.0767 -401.659" size="150 25.392 145" />
+    </Scope>
+    <Scope name="Region_JisiStartable" >
+        <Space name="Box1" type="Box" pos="0.0197334 35.5768 -399.07" size="400 59.949 300" />
+    </Scope>
+    <Scope name="Region_NiHao01" >
+        <Space name="Box1" type="Box" pos="466.035 10.099 366.253" size="73.1916 22.54 85.0798" />
+    </Scope>
+    <Scope name="Region_NiHao02" >
+        <Space name="Box1" type="Box" pos="-458.139 9.35519 365.961" size="72.7173 25.7192 83.5415" />
+    </Scope>
+    <Scope name="Region_NiHao03" >
+        <Space name="Box1" type="Box" pos="-509.614 10.015 -233.389" size="80.8468 22.3882 65.715" />
+    </Scope>
+    <Scope name="Region_OutOfBaoKu" >
+        <Space name="Box1" type="Box" pos="-508.192 10.5 -320.148" size="60 0.1 20" />
+    </Scope>
+    <Scope name="Region_OutOfJisi" >
+        <Space name="Box1" type="Box" pos="89.684 35.1 -360.624" size="20 0.1 45" />
+    </Scope>
+    <Scope name="Region_OutOfLetterBound" >
+        <Space name="Box1" type="Box" pos="-347.419 -0.9 874.879" size="44.029 0.1 45.538" />
+    </Scope>
+    <Scope name="Region_OutOfXianBao" >
+        <Space name="Box1" type="Box" pos="574.607 10.4 346.603" size="23.425 0.1 60.022" />
+    </Scope>
+    <Scope name="Region_OutOfXingLi_1" >
+        <Space name="Box1" type="Box" pos="-4 29.1 -303" size="6 0.1 6" />
+    </Scope>
+    <Scope name="Region_OutOfXingLi_2" >
+        <Space name="Box1" type="Box" pos="4 29.1 -303" size="6 0.1 6" />
+    </Scope>
+    <Scope name="Region_ShenLong" >
+        <Space name="Box1" type="Box" pos="-780 0 2610" size="600 1000 600" />
+    </Scope>
+    <Scope name="Region_ShenMing" >
+        <Space name="Cylinder1" type="Cylinder" pos="421.551 7.37663 924.821" size="168.066 26.1828 168.066" />
+    </Scope>
+    <Scope name="Region_XianBaoProcessing" >
+        <Space name="Box1" type="Box" pos="640.211 11.7803 367.634" size="91.2255 26.5236 100.214" />
+    </Scope>
+    <Scope name="Region_XianBaoStartable" >
+        <Space name="Box1" type="Box" pos="597.954 11.802 368.377" size="134.2 24.1603 194.598" />
+    </Scope>
+    <Scope name="Region_YangHua" >
+        <Space name="Box1" type="Box" pos="-4.74302 0.726722 1854.04" size="100 1 20" />
+        <Space name="Box2" type="Box" pos="-82.8443 0.39286 1771.72" size="20 1 100" />
+        <Space name="Box3" type="Box" pos="-1.79089 0.374115 1682.35" size="100 1 20" />
+        <Space name="Box4" type="Box" pos="83.6823 0.516983 1770.66" size="20 1 100" />
+    </Scope>
+    <Scope name="Region_YangYu01" >
+        <Space name="Box1" type="Box" pos="57.6371 5.13744 362.784" size="4 60 190" />
+    </Scope>
+    <Scope name="Region_YangYu01_1" >
+        <Space name="Box1" type="Box" pos="35 5 380" size="50 20 150" />
+        <Space name="Point" pos="33.7499 -0.799927 372.171" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="Region_YangYu02" >
+        <Space name="Box1" type="Box" pos="-56.562 7.58112 363.071" size="4 40 190" />
+    </Scope>
+    <Scope name="Region_YangYu02_1" >
+        <Space name="Box1" type="Box" pos="-35 5 380" size="50 20 150" />
+        <Space name="Point" pos="-33.141 -0.799957 373.475" rot="0.707107 0 0.707107 0" />
+    </Scope>
+    <Scope name="Region_YangYuTeXiao01" >
+        <Space name="Box1" type="Box" pos="114.719 -18.1 366.683" size="20 0.5 40" />
+        <Space name="Point" pos="112.8 -18 361.907" rot="0.707107 0 0.707107 0" />
+    </Scope>
+    <Scope name="Region_YangYuTeXiao02" >
+        <Space name="Box1" type="Box" pos="-145.439 -18.1 366.921" size="20 0.5 40" />
+        <Space name="Point" pos="-141.405 -18 362.908" rot="0.707107 0 -0.707107 0" />
+    </Scope>
+    <Scope name="Region_ZhuanYunTai" >
+        <Space name="Cylinder1" type="Cylinder" pos="421.575 7.37663 924.789" size="84.0716 30.1188 84.0716" />
+    </Scope>
+    <Scope name="Region_ZhunBei_ZY" >
+        <Space name="Box1" type="Box" pos="314.057 0.576645 916.741" size="20 1 100" />
+    </Scope>
+    <Scope name="Region_shipin" >
+        <Space name="Box1" type="Box" pos="-640.673 11.7948 364.485" size="99.075 36.1228 99.075" />
+    </Scope>
+    <Scope name="Region_shipin_NOsound" >
+        <Space name="Box1" type="Box" pos="-598.804 11.8221 369.407" size="171.092 216.271 232.575" />
+    </Scope>
+    <Scope name="Region_xiexinjihuo" >
+        <Space name="Point" pos="-429.611 109.427 920.963" />
+    </Scope>
+    <Scope name="Region_xiexinqvyu" >
+        <Space name="Cylinder1" type="Cylinder" pos="-429.74 12.056 920.963" size="100 35.8261 100" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_XB_fire_01" >
+        <Space name="Cylinder1" type="Cylinder" pos="658.015 11.7749 366.992" rot="0.992941 0 -0.118601 0" size="18 18 18" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_XB_snd" >
+        <Space name="Box1" type="Box" pos="602.253 11.8075 367.08" size="181 100 242" infinite="true" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_YY_trigger_01" >
+        <Space name="Sphere1" type="Sphere" pos="143.891 16.4255 369.677" size="8 8 8" />
+        <Space name="Sphere2" type="Sphere" pos="-116.351 13.1837 369.931" size="8 8 8" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_ZD_snd" >
+        <Space name="Box1" type="Box" pos="-0.130948 34.951 -363.503" size="401.91 100 239" infinite="true" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_ZL_snd" >
+        <Space name="Box1" type="Box" pos="-596.35 11.89 365.756" size="181 100 242" infinite="true" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_ZYT_effect_1" >
+        <Space name="Cylinder1" type="Cylinder" pos="421.475 7.37662 925.852" size="77 100 77" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bird_1" >
+        <Space name="Sphere1" type="Sphere" pos="-112.882 118 1920.13" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="587.39 118 880.544" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="-376.519 118 1237.03" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bird_2" >
+        <Space name="Sphere1" type="Sphere" pos="111.998 118 1508.96" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="-541.36 117.999 1689.94" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="171.7 118 791.856" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bird_3" >
+        <Space name="Sphere1" type="Sphere" pos="-228.158 118 2314.35" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="779.449 118 1713.18" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="-514.958 117.999 875.042" size="22 22 22" />
+        <Space name="Sphere4" type="Sphere" pos="140.985 118 1918.24" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bird_4" >
+        <Space name="Sphere1" type="Sphere" pos="-162.909 76.9762 734.217" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="621.585 118 1451.14" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="-403.576 118.001 1411.91" size="22 22 22" />
+        <Space name="Sphere4" type="Sphere" pos="-341.099 76.9762 461.215" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bird_5" >
+        <Space name="Sphere1" type="Sphere" pos="364.885 94.2296 459.362" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="143.05 118 1081.52" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="578.296 118 -336.63" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bird_6" >
+        <Space name="Sphere1" type="Sphere" pos="-131.873 118 1278.44" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="590.266 118 2284.1" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="496.899 118 1599.71" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bird_7" >
+        <Space name="Sphere1" type="Sphere" pos="-614.521 118 1998.73" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="573.207 118 1218.58" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="-663.953 118 1532.33" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bird_8" >
+        <Space name="Sphere1" type="Sphere" pos="465.221 118 -117.326" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="450.077 118 774.205" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="-313.872 118 1017.09" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bosk_1" >
+        <Space name="Sphere1" type="Sphere" pos="296.199 0.627098 1332.78" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="698.615 0.627098 1342.84" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="-229.526 0.627098 1357.41" size="22 22 22" />
+        <Space name="Sphere4" type="Sphere" pos="702.071 0.626793 689.131" size="22 22 22" />
+        <Space name="Sphere5" type="Sphere" pos="573.471 0.627296 -202.366" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_bosk_2" >
+        <Space name="Sphere1" type="Sphere" pos="182.693 -1.00037 831.279" size="22 22 22" />
+        <Space name="Sphere2" type="Sphere" pos="-691.079 -1.00024 942.462" size="22 22 22" />
+        <Space name="Sphere3" type="Sphere" pos="-433.059 -1.00037 654.321" size="22 22 22" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_fire_mid_01" >
+        <Space name="Sphere1" type="Sphere" pos="-37.3017 9.73328 189.319" size="5 5 5" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_fire_mid_02" >
+        <Space name="Sphere1" type="Sphere" pos="-37.4514 9.09153 113.563" size="5 5 5" />
+        <Space name="Sphere2" type="Sphere" pos="38.1255 9.07057 189.673" size="5 5 5" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_fire_mid_03" >
+        <Space name="Sphere1" type="Sphere" pos="38.2485 9.74625 113.847" size="5 5 5" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_fire_small_01" >
+        <Space name="Sphere1" type="Sphere" pos="81.6811 52.2895 984.165" size="8 8 8" />
+        <Space name="Sphere2" type="Sphere" pos="-81.6605 52.2895 862.698" size="8 8 8" />
+        <Space name="Sphere3" type="Sphere" pos="58.3967 21.1144 641.059" size="5 5 5" />
+        <Space name="Sphere4" type="Sphere" pos="-402.858 21.1144 404.831" size="5 5 5" />
+        <Space name="Sphere5" type="Sphere" pos="-469.945 21.1143 -182.748" size="5 5 5" />
+        <Space name="Sphere6" type="Sphere" pos="403.577 21.1144 327.256" size="5 5 5" />
+        <Space name="Sphere7" type="Sphere" pos="329.135 21.1143 640.89" size="5 5 5" />
+        <Space name="Sphere8" type="Sphere" pos="-220.94 21.1144 641.059" size="5 5 5" />
+        <Space name="Sphere9" type="Sphere" pos="344.258 21.1144 -401.184" size="5 5 5" />
+        <Space name="Sphere10" type="Sphere" pos="604.473 21.1144 -19.076" size="5 5 5" />
+        <Space name="Sphere11" type="Sphere" pos="48.3683 21.1144 1286.56" size="5 5 5" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_fire_small_02" >
+        <Space name="Sphere1" type="Sphere" pos="-81.3364 53.4268 982.345" size="8 8 8" />
+        <Space name="Sphere2" type="Sphere" pos="79.9897 53.4268 864.279" size="8 8 8" />
+        <Space name="Sphere3" type="Sphere" pos="-402.604 20.1485 327.52" size="5 5 5" />
+        <Space name="Sphere4" type="Sphere" pos="-57.9244 20.1484 641.949" size="5 5 5" />
+        <Space name="Sphere5" type="Sphere" pos="-550.144 20.1485 -182.541" size="5 5 5" />
+        <Space name="Sphere6" type="Sphere" pos="403.491 20.1484 405.606" size="5 5 5" />
+        <Space name="Sphere7" type="Sphere" pos="237.766 20.1484 641.277" size="5 5 5" />
+        <Space name="Sphere8" type="Sphere" pos="-319.932 20.1484 640.416" size="5 5 5" />
+        <Space name="Sphere9" type="Sphere" pos="395.59 20.1484 -401.28" size="5 5 5" />
+        <Space name="Sphere10" type="Sphere" pos="-47.8773 20.1484 1286.33" size="5 5 5" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_flag_1" >
+        <Space name="Sphere1" type="Sphere" pos="103.574 66.6271 230.011" size="18 18 18" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_flag_2" >
+        <Space name="Sphere1" type="Sphere" pos="-103.957 64.6764 229.615" size="18 18 18" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_lake_1" >
+        <Space name="Cylinder1" type="Cylinder" pos="151.778 0 413.146" size="98 100 58" />
+        <Space name="Cylinder2" type="Cylinder" pos="290.416 0 58.87" size="58 100 88" />
+        <Space name="Cylinder3" type="Cylinder" pos="-155.489 0 302.648" size="98 100 58" />
+        <Space name="Cylinder4" type="Cylinder" pos="-474.012 0 39.139" size="88 100 58" />
+        <Space name="Cylinder5" type="Cylinder" pos="-751.711 0 -173.88" size="58 100 88" />
+        <Space name="Cylinder6" type="Cylinder" pos="-651.501 0 -568.778" size="88 100 58" />
+        <Space name="Cylinder7" type="Cylinder" pos="-210.88 0 -631.136" size="88 100 58" />
+        <Space name="Cylinder8" type="Cylinder" pos="250.064 0 -625.039" size="88 100 58" />
+        <Space name="Cylinder9" type="Cylinder" pos="708.249 0 -569.081" size="88 100 58" />
+        <Space name="Cylinder10" type="Cylinder" pos="777.227 0 -149.181" size="58 100 88" />
+        <Space name="Cylinder11" type="Cylinder" pos="822.368 0 173.333" size="58 100 88" />
+        <Space name="Cylinder12" type="Cylinder" pos="815.976 0 656.625" size="58 100 88" />
+        <Space name="Cylinder13" type="Cylinder" pos="872.519 0 1113.54" size="58 100 88" />
+        <Space name="Cylinder14" type="Cylinder" pos="973.11 0 1541.05" size="58 100 88" />
+        <Space name="Cylinder15" type="Cylinder" pos="982.589 0 1988.69" size="58 100 88" />
+        <Space name="Cylinder16" type="Cylinder" pos="757.464 0 2337.69" size="58 100 88" />
+        <Space name="Cylinder17" type="Cylinder" pos="447.428 0 2563.37" size="58 100 88" />
+        <Space name="Cylinder18" type="Cylinder" pos="77.5767 0 2558.88" size="58 100 88" />
+        <Space name="Cylinder19" type="Cylinder" pos="-288.837 0 2500.18" size="58 100 88" />
+        <Space name="Cylinder20" type="Cylinder" pos="-580.183 0 2243.5" size="58 100 88" />
+        <Space name="Cylinder21" type="Cylinder" pos="-853.864 0 1942.27" size="58 100 88" />
+        <Space name="Cylinder22" type="Cylinder" pos="-834.559 0 1467.35" size="58 100 88" />
+        <Space name="Cylinder23" type="Cylinder" pos="-816.526 0 1009.63" size="58 100 88" />
+        <Space name="Cylinder24" type="Cylinder" pos="-799.453 0 562.32" size="58 100 88" />
+        <Space name="Cylinder25" type="Cylinder" pos="-797.881 0 108.468" size="58 100 88" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_lake_2" >
+        <Space name="Cylinder1" type="Cylinder" pos="150.646 0 307.48" size="98 100 58" />
+        <Space name="Cylinder2" type="Cylinder" pos="-288.577 0 56.438" size="58 100 88" />
+        <Space name="Cylinder3" type="Cylinder" pos="-153.777 0 405.179" size="98 100 58" />
+        <Space name="Cylinder4" type="Cylinder" pos="-604.338 0 36.521" size="88 100 58" />
+        <Space name="Cylinder5" type="Cylinder" pos="-752.5 0 -286.224" size="58 100 88" />
+        <Space name="Cylinder6" type="Cylinder" pos="-541.328 0 -563.875" size="88 100 58" />
+        <Space name="Cylinder7" type="Cylinder" pos="-98.727 0 -629.086" size="88 100 58" />
+        <Space name="Cylinder8" type="Cylinder" pos="388.785 0 -570.288" size="88 100 58" />
+        <Space name="Cylinder9" type="Cylinder" pos="776.2 0 -478.24" size="58 100 88" />
+        <Space name="Cylinder10" type="Cylinder" pos="780.198 0 -45.197" size="58 100 88" />
+        <Space name="Cylinder11" type="Cylinder" pos="468.985 0 36.613" size="88 100 58" />
+        <Space name="Cylinder12" type="Cylinder" pos="821.75 0 287.519" size="58 100 88" />
+        <Space name="Cylinder13" type="Cylinder" pos="828.143 0 772.657" size="58 100 88" />
+        <Space name="Cylinder14" type="Cylinder" pos="901.762 0 1215.4" size="58 100 88" />
+        <Space name="Cylinder15" type="Cylinder" pos="1019.82 0 1657.71" size="58 100 88" />
+        <Space name="Cylinder16" type="Cylinder" pos="929.203 0 2083.33" size="58 100 88" />
+        <Space name="Cylinder17" type="Cylinder" pos="685.263 0 2390.63" size="58 100 88" />
+        <Space name="Cylinder18" type="Cylinder" pos="352.196 0 2572.64" size="58 100 88" />
+        <Space name="Cylinder19" type="Cylinder" pos="-19.9177 0 2541.15" size="58 100 88" />
+        <Space name="Cylinder20" type="Cylinder" pos="-363.946 0 2455.71" size="58 100 88" />
+        <Space name="Cylinder21" type="Cylinder" pos="-643.699 0 2163.73" size="58 100 88" />
+        <Space name="Cylinder22" type="Cylinder" pos="-902.383 0 1833.93" size="58 100 88" />
+        <Space name="Cylinder23" type="Cylinder" pos="-876.506 0 1341.65" size="58 100 88" />
+        <Space name="Cylinder24" type="Cylinder" pos="-808.248 0 894.929" size="58 100 88" />
+        <Space name="Cylinder25" type="Cylinder" pos="-800.284 0 459.01" size="58 100 88" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_lake_3" >
+        <Space name="Cylinder1" type="Cylinder" pos="177.446 0 177.141" size="58 100 88" />
+        <Space name="Cylinder2" type="Cylinder" pos="-288.934 0 175.853" size="58 100 88" />
+        <Space name="Cylinder3" type="Cylinder" pos="-728.391 0 36.21" size="88 100 58" />
+        <Space name="Cylinder4" type="Cylinder" pos="-754.012 0 -405.76" size="58 100 88" />
+        <Space name="Cylinder5" type="Cylinder" pos="-422.304 0 -564.995" size="88 100 58" />
+        <Space name="Cylinder6" type="Cylinder" pos="14.185 0 -625.688" size="88 100 58" />
+        <Space name="Cylinder7" type="Cylinder" pos="494.253 0 -571.953" size="88 100 58" />
+        <Space name="Cylinder8" type="Cylinder" pos="775.727 0 -372.151" size="58 100 88" />
+        <Space name="Cylinder9" type="Cylinder" pos="702.954 0 35.105" size="88 100 58" />
+        <Space name="Cylinder10" type="Cylinder" pos="818.842 0 409.519" size="58 100 88" />
+        <Space name="Cylinder11" type="Cylinder" pos="841.885 0 887.25" size="58 100 88" />
+        <Space name="Cylinder12" type="Cylinder" pos="935.045 0 1329.83" size="58 100 88" />
+        <Space name="Cylinder13" type="Cylinder" pos="1033.52 0 1771.31" size="58 100 88" />
+        <Space name="Cylinder14" type="Cylinder" pos="887.204 0 2190.01" size="58 100 88" />
+        <Space name="Cylinder15" type="Cylinder" pos="626.865 0 2473.95" size="58 100 88" />
+        <Space name="Cylinder16" type="Cylinder" pos="256.797 0 2570.56" size="58 100 88" />
+        <Space name="Cylinder17" type="Cylinder" pos="-108.882 0 2525.11" size="58 100 88" />
+        <Space name="Cylinder18" type="Cylinder" pos="-429.452 0 2390.76" size="58 100 88" />
+        <Space name="Cylinder19" type="Cylinder" pos="-722.346 0 2109.61" size="58 100 88" />
+        <Space name="Cylinder20" type="Cylinder" pos="-908.837 0 1702.25" size="58 100 88" />
+        <Space name="Cylinder21" type="Cylinder" pos="-867.413 0 1218.77" size="58 100 88" />
+        <Space name="Cylinder22" type="Cylinder" pos="-795.854 0 783.362" size="58 100 88" />
+        <Space name="Cylinder23" type="Cylinder" pos="-794.849 0 343.307" size="58 100 88" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_lake_4" >
+        <Space name="Cylinder1" type="Cylinder" pos="284.717 0 174.577" size="58 100 88" />
+        <Space name="Cylinder2" type="Cylinder" pos="-174.769 0 177.633" size="58 100 88" />
+        <Space name="Cylinder3" type="Cylinder" pos="-751.845 0 -65.701" size="58 100 88" />
+        <Space name="Cylinder4" type="Cylinder" pos="-757.885 0 -515.556" size="58 100 88" />
+        <Space name="Cylinder5" type="Cylinder" pos="-330.363 0 -630.816" size="88 100 58" />
+        <Space name="Cylinder6" type="Cylinder" pos="128.538 0 -622.049" size="88 100 58" />
+        <Space name="Cylinder7" type="Cylinder" pos="605.13 0 -569.182" size="88 100 58" />
+        <Space name="Cylinder8" type="Cylinder" pos="774.968 0 -257.21" size="58 100 88" />
+        <Space name="Cylinder9" type="Cylinder" pos="568.611 0 33.194" size="88 100 58" />
+        <Space name="Cylinder10" type="Cylinder" pos="823.458 0 531.654" size="58 100 88" />
+        <Space name="Cylinder11" type="Cylinder" pos="852.761 0 1002.11" size="58 100 88" />
+        <Space name="Cylinder12" type="Cylinder" pos="935.896 0 1435.2" size="58 100 88" />
+        <Space name="Cylinder13" type="Cylinder" pos="1020.36 0 1889.7" size="58 100 88" />
+        <Space name="Cylinder14" type="Cylinder" pos="833.098 0 2293.06" size="58 100 88" />
+        <Space name="Cylinder15" type="Cylinder" pos="564.978 0 2552.18" size="58 100 88" />
+        <Space name="Cylinder16" type="Cylinder" pos="166.265 0 2566.82" size="58 100 88" />
+        <Space name="Cylinder17" type="Cylinder" pos="-198.829 0 2518.07" size="58 100 88" />
+        <Space name="Cylinder18" type="Cylinder" pos="-505.188 0 2315.02" size="58 100 88" />
+        <Space name="Cylinder19" type="Cylinder" pos="-795.944 0 2040.75" size="58 100 88" />
+        <Space name="Cylinder20" type="Cylinder" pos="-859.776 0 1584.24" size="58 100 88" />
+        <Space name="Cylinder21" type="Cylinder" pos="-845.973 0 1111.63" size="58 100 88" />
+        <Space name="Cylinder22" type="Cylinder" pos="-788.653 0 677.603" size="58 100 88" />
+        <Space name="Cylinder23" type="Cylinder" pos="-791.337 0 230.135" size="58 100 88" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_music_1" >
+        <Space name="Box1" type="Box" pos="72.719 8888 1585" size="1888 100 1888" infinite="true" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_music_2" >
+        <Space name="Box1" type="Box" pos="0.366 8888 233.391" size="918 100 818" infinite="true" />
+        <Space name="Box2" type="Box" pos="-514.727 8888 -20.881" size="399 100 428.681" infinite="true" />
+        <Space name="Box3" type="Box" pos="516.653 8888 -170.677" size="470.466 100 738.528" infinite="true" />
+        <Space name="Box4" type="Box" pos="-577.247 8888 591.301" size="588 100 100" infinite="true" />
+        <Space name="Box5" type="Box" pos="722.543 8888 591.301" size="588 100 100" infinite="true" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_outdoor_1" >
+        <Space name="Box1" type="Box" pos="38.39 6888 1581.54" size="1888 100 2188" infinite="true" />
+        <Space name="Box2" type="Box" pos="252.551 6888 200" size="518 100 888" infinite="true" />
+        <Space name="Box3" type="Box" pos="-246.614 6888 200" size="518 100 888" infinite="true" />
+        <Space name="Box4" type="Box" pos="-495.518 6888 -11" size="587.583 100 508.88" infinite="true" />
+        <Space name="Box5" type="Box" pos="-702.27 6888 -364.466" size="88 100 288" infinite="true" />
+        <Space name="Box6" type="Box" pos="-317.285 6888 -364.466" size="88 100 288" infinite="true" />
+        <Space name="Box7" type="Box" pos="-245.577 6888 -364.466" size="88 100 288" infinite="true" />
+        <Space name="Box8" type="Box" pos="494.344 6888 -142.176" size="587.583 100 778.251" infinite="true" />
+        <Space name="Box9" type="Box" pos="2.201 6888 -530.438" size="588 100 88" infinite="true" />
+        <Space name="Box10" type="Box" pos="-497.929 6888 -491.833" size="588 100 88" infinite="true" />
+        <Space name="Box11" type="Box" pos="-674.128 6888 -257.306" rot="0.922506 0 0.38598 0" size="88 100 88" infinite="true" />
+        <Space name="Box12" type="Box" pos="-347.177 6888 -255.119" rot="0.922506 0 0.38598 0" size="88 100 88" infinite="true" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_water stone_1" >
+        <Space name="Cylinder1" type="Cylinder" pos="143.823 20.2724 1309.71" size="8 58 8" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_water stone_2" >
+        <Space name="Cylinder1" type="Cylinder" pos="-432.537 12.8814 -184.001" size="5 58 5" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_waterfall_1" >
+        <Space name="Cylinder1" type="Cylinder" pos="-1240.51 -11.423 -382.814" size="100 888 100" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_waterfall_2" >
+        <Space name="Cylinder1" type="Cylinder" pos="1252.61 -3.70166 -548.981" size="100 888 100" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_waterfall_3" >
+        <Space name="Cylinder1" type="Cylinder" pos="947.388 8.87024 -2601.72" size="100 888 100" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_waterfall_4" >
+        <Space name="Cylinder1" type="Cylinder" pos="514.975 13.3678 -2891.65" size="100 888 100" />
+    </Scope>
+    <Scope name="SoundPos_Ganenyuan_waterfall_5" >
+        <Space name="Cylinder1" type="Cylinder" pos="39.4921 541.756 -2990.26" size="100 888 100" />
+    </Scope>
+</Scopes>

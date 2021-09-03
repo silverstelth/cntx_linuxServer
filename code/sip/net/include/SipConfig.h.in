@@ -1,0 +1,3 @@
+#if defined(SIP_OS_UNIX)
+#   define @UNIX_PLATFORM@
+#endif // SIP_OS_UNIX

@@ -1,0 +1,26 @@
+// ver 1.1.1
+
+AcceptExternalShards = 0;	// 1 if you want to accept external shard that are not in database
+//ForceDatabaseReconnection = "dummy";	// change this value to force a configfile reload and reconnection to the database
+					// to take in count the new value of Database*
+					// the content of this variable doesn't matter, it s just a fake to reload database var
+
+ForceDatabaseReconnection = "";
+
+Beep = 1;		// 1 if you want to beep when a new client comes
+
+
+// Common Options
+SId = 2;
+
+DontUseNS = 1;
+DontUseAES = 0;
+
+WindowStyle = "GTK";
+NegFiltersDebug    += { "NETL", "DBINTERFACE: HSTMT created", "DBINTERFACE: HSTMT destroyed", "GETDATE()"  };
+NegFiltersInfo     += { "NETL" };
+NegFiltersWarning  += { };
+
+DisplayedVariables += { "", "@Shards|shards", "@RegUsers|registeredUsers", "@OnlineUsers|onlineUsers", "OnlineUsers|OnlineUsersNumber" };
+
+InsertConfigFilename = {"main.cfg"};

@@ -1,0 +1,39 @@
+// ver 1.2.2
+
+DisplayedVariables += { "", "@OnlineFamilys|lsFamilys", "OnlineUsers|OnlineUsersNumber" };
+
+DefaultUserPriv = "";
+TimeBeforeEraseCookie = 900;
+
+// 1 : use security, 0: don't use security
+// in particular Service, it must be defined.
+ UseSecurity = 1;
+ ExchangeAlgorithm = 1;
+ DefaultMode = "DES";
+
+LogRecvPacketFlag = 0;
+LogPacketFilterFlag = 1;
+AuthorizeTime = 100000;
+
+// 		{ methodName, methodID, GenKeyMethod, KeyLength, PlainTextLimit, KeyFileName, KeyFileExt}
+
+SymCryptInfo	= {"DES",	0,	1,	2,	3,	"",	"des"};
+AsymCryptInfo	= {"RSA",	0,	0,	1024,	1024,	"",	"pem"};
+KeyGenerater	= {"RAND-TIME",	0,	0,	1,	1,	"",	""};
+WrapCryptInfo	= {"WRAP",	0,	0,	1024,	1024,	"",	"torken"};
+
+// by default, use WIN displayer
+WindowStyle = "GTK";
+
+NegFiltersDebug    += { };
+NegFiltersInfo     += { };
+NegFiltersWarning  += { "SC_ANIMALMOVE", "11808", "SC_OUTROOM", "11114" };
+
+NegPacketFilters = { "11808", "31121", "31122", "31127", "31128" };
+
+ServiceUnUseMemMbyte = 500;
+InsertConfigFilename = {"shard.cfg"};
+
+UserUpdateTime = 100;
+MinUserUpdateTime = 0;
+UniNetUpdateTime = 100;

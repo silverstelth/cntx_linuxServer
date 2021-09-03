@@ -1,0 +1,20 @@
+// ver 1.1.0
+
+DisplayedVariables += { "", "@Services|nsServices" };
+
+SId = 3;
+
+// Need or not a connection to a naming service
+DontUseNS = 1;
+
+UniqueOnShardServices = { "WS" };
+UniqueByMachineServices = {};
+
+// by default, use WIN displayer
+WindowStyle = "GTK";
+
+NegFiltersDebug    += { "NETL" };
+NegFiltersInfo     += { "NETL" };
+NegFiltersWarning  += { };
+
+InsertConfigFilename = {"shard.cfg"};

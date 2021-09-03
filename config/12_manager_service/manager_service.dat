@@ -1,0 +1,11 @@
+// ver 1.1.0
+
+// by default, use WIN displayer
+WindowStyle = "GTK";
+LogRecvPacketFlag=1;
+
+NegFiltersDebug    += { "NETL", "DBINTERFACE: HSTMT created", "DBINTERFACE: HSTMT destroyed", "GETDATE()", "513"  };
+NegFiltersInfo     += { "NETL" };
+NegFiltersWarning  += { };
+
+InsertConfigFilename = {"manager_service.cfg"};

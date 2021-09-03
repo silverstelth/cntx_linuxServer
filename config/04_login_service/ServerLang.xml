@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>NamJuSong</Author>
+  <LastAuthor>SimSongHo</LastAuthor>
+  <Created>2008-09-29T14:18:24Z</Created>
+  <LastSaved>2010-11-26T09:09:50Z</LastSaved>
+  <Company>Samilpo</Company>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10740</WindowHeight>
+  <WindowWidth>15480</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>120</WindowTopY>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="돋움체" x:CharSet="129" x:Family="Modern"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="SimSun"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="SimSun"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="SimSun"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="SimSun" ss:Color="#0000FF" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="SimSun" ss:Color="#FF0000"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="SimSun" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="SimSun" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="SimSun" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="돋움" x:CharSet="129" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Borders/>
+   <Font ss:FontName="BatangChe"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s74">
+   <Borders/>
+   <Font ss:FontName="PRK P Bukul"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="ServerLang">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="11" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultRowHeight="12">
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="39"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="199.5"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="109.5"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">ID</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">UIText_cn</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">UIText_ko</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">好友</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">내친구</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">默认组</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">디폴트방그룹</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">默认相册</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">디폴트사진그룹</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">天园视频</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">방영중동화상</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">影音</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">디폴트동화상그룹</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">随机奖励</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">상품</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">您好，您的物品栏已满，请整理后领取奖励！</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">상품</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s73"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">返<Font html:Face="FangSong">还</Font><Font>能量</Font></ss:Data></Cell>
+    <Cell><Data ss:Type="String">추가포인트</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s74"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">您申<Font html:Face="FangSong">请</Font><Font>的</Font><Font
+       html:Face="SimSun">%s, 系统返还了%d能量。</Font></ss:Data></Cell>
+    <Cell ss:StyleID="s73"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">방<Font html:Face="SimSun">%s</Font><Font>에</Font><Font
+       html:Face="SimSun"> </Font><Font>대하여</Font><Font html:Face="SimSun"> </Font><Font>추가포인트</Font><Font
+       html:Face="SimSun"> %d</Font><Font>가</Font><Font html:Face="SimSun"> </Font><Font>지불되였습니다</Font><Font
+       html:Face="SimSun">.</Font></ss:Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <Zoom>115</Zoom>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>2</SplitHorizontal>
+   <TopRowBottomPane>2</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

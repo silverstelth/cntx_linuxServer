@@ -1,0 +1,43 @@
+// ver 1.2.0
+
+// Need or not a connection to a admin executor service
+DontUseAES = 1;
+
+// Need or not a connection to a naming service
+DontUseNS = 1;
+
+// how many second before aborting the request if not finished
+RequestTimeout = 5;
+
+WindowStyle = "GTK";
+
+NegFiltersDebug    += { "NETL", "REQUEST", "GRAPH", "ADMIN" };
+NegFiltersInfo     += { "NETL", "REQUEST", "GRAPH", "ADMIN" };
+NegFiltersWarning  += { };
+
+// If services didn't answer the ping message in less than 15mn, kill it and relaunch it (in seconds)
+PingTimeout = 900;
+
+// Time between 2 ping messages (in seconds)
+PingFrequency = 60;
+
+// AliasName				// ShortName	// ExeName			// ServiceRelativePath		// Flag: 0:any, 1:admin only, 2:shard only, 3:host only
+RegExeInfoList = {
+	"admin_main_service",		"AS",		"admin_main_service",		"01_admin_service",		1,
+	"admin_executor_service",	"AES",		"admin_executor_service",	"02_admin_executor_service",	3,
+	"start_service",		"SS",		"start_service",		"03_start_service",		0,
+	"login_service",		"LS",		"login_service",		"04_login_service",		1,
+	"naming_service",		"NS",		"naming_service",		"05_naming_service",		2,
+	"welcome_service",		"WS",		"welcome_service",		"06_welcome_service",		2,
+	"frontend_service",		"FS",		"frontend",			"07_frontend_service",		3,
+	"openroom_service",		"OROOM_S",	"openroom",			"08_openroom_service",		0,
+	"lobby_service",		"LOBBY",	"openroom -flobby",		"08_openroom_service",		0,
+	"religionroom_service",		"RROOM_S",	"openroom -r",			"08_openroom_service",		0,
+	"relay_service",		"RS",		"relay_service",		"09_relay_service",		0,
+	"history_service",		"HIS_S", 	"HisManager",			"10_history_service",		0,
+	"stream_service",		"SMS",		"StreamService.exe",		"11_stream_service",		0,
+	"log_service",			"LOG_S",	"Logservice",			"20_log_service",		0,
+	"manager_service",		"MS",		"manager",			"12_manager_service",		0,
+};
+
+InsertConfigFilename = {"admin_executor_service.cfg"};
