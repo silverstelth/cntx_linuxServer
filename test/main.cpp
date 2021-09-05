@@ -6,6 +6,7 @@
 #include <sqlext.h>
 #include <sqlucode.h>
 #include <odbcinst.h>
+#include <math.h>
 #include "type.h"
 
 /***************************************/
@@ -29,7 +30,24 @@
 	} \
 }
 
+typedef struct STR_BINDING {
+	SQLSMALLINT cDisplaySize;		// size to display
+	WCHAR *wszBuffer;				// display buffer
+	SQLLEN indPtr;					// size or null
+	BOOL fChar;						// character col?
+	struct STR_BINDING *sNext;		// linked list
+} BINDING;
+
+#define DISPLAY_MAX				50
+#define DISPLAY_FORMAT_EXTRA	3
+#define DISPLAY_FORMAT			L"%c %*.*s "
+#define DISPLAY_FORMAT_C		L"%c %-*.*s "
+#define NULL_SIZE				6
 #define SQL_QUERY_SIZE			1000
+
+#define PIPE					L'|'
+
+short gHeight = 80;
 
 /******************************************/
 /* Forward references                     */
@@ -46,6 +64,17 @@ SQLWCHAR* ConvertString(lpcwstr str);
 void DisplayResults(HSTMT hStmt,
 					SQLSMALLINT cCols);
 
+void AllocateBindings(HSTMT hStmt,
+						SQLSMALLINT cCols,
+						BINDING **ppBinding,
+						SQLSMALLINT *pDisplay);
+
+void DisplayTitles(HSTMT    hStmt,
+                   DWORD    cDisplaySize,
+                   BINDING* pBinding);
+
+
+
 SQLWCHAR* ConvertString(lpcwstr cStr, int& len)
 {
 	std::wstring str(cStr);
@@ -58,10 +87,168 @@ SQLWCHAR* ConvertString(lpcwstr cStr, int& len)
 	return sqlConnStr;
 }
 
+void DisplayTitles(HSTMT    hStmt,
+                   DWORD    cDisplaySize,
+                   BINDING* pBinding)
+{
+	bool noError = true;
+	WCHAR	wszTitle[DISPLAY_MAX];
+	SQLSMALLINT iCol = 1;
+	
+	for (; pBinding; pBinding = pBinding->sNext)
+	{
+		TRYODBC(hStmt,
+                SQL_HANDLE_STMT,
+                SQLColAttribute(hStmt,
+                    iCol++,
+                    SQL_DESC_NAME,
+                    wszTitle,
+                    sizeof(wszTitle), // Note count of bytes!
+                    NULL,
+                    NULL));
+
+		if (noError)
+		{
+			wprintf(DISPLAY_FORMAT_C,
+		             PIPE,
+		             pBinding->cDisplaySize/2,
+		             pBinding->cDisplaySize/2,
+		             wszTitle);
+		}
+	}
+
+	if (noError != false)
+	{
+		wprintf(L" %c\n", PIPE);
+	}
+}
+
+void AllocateBindings(HSTMT hStmt,
+						SQLSMALLINT cCols,
+						BINDING **ppBinding,
+						SQLSMALLINT *pDisplay)
+{
+	bool noError = true;
+	SQLSMALLINT iCol;
+	BINDING *pThisBinding, *pLastBinding = NULL;
+	SQLLEN cchDisplay, ssType;
+	SQLSMALLINT cchColumnNameLength;
+	
+	*pDisplay = 0;
+	for (iCol = 1; iCol <= cCols; iCol++)
+	{
+		pThisBinding = (BINDING*)(malloc(sizeof(BINDING)));
+		if (!(pThisBinding))
+		{
+			fwprintf(stderr, L"Out of memory!\n");
+			exit(-100);
+		}
+
+		if (iCol == 1)
+		{
+			*ppBinding = pThisBinding;
+		}
+		else
+		{
+			pLastBinding->sNext = pThisBinding;
+		}
+		pLastBinding = pThisBinding;
+		
+		// Figure out the display length of the column (we will
+		// bind to char since we are only displaying data, in general
+		// you should bind to the appropriate C type if you are going
+		// to manipulate data since it is much faster...)
+		
+		TRYODBC(hStmt,
+			SQL_HANDLE_STMT,
+			SQLColAttribute(hStmt,
+				iCol,
+				SQL_DESC_DISPLAY_SIZE,
+				NULL,
+				0,
+				NULL,
+				&cchDisplay));
+
+		// Figure out if this is a character or numeric column; this is
+		// used to determine if we want to display the data left- or right-
+		// aligned.
+		
+		// SQL_DESC_CONCISE_TYPE maps to the 1.x SQL_COLUMN_TYPE
+		// This is what you must use if you want to work
+		// against a 2.x driver.
+		
+		TRYODBC(hStmt,
+			SQL_HANDLE_STMT,
+			SQLColAttribute(hStmt,
+				iCol,
+				SQL_DESC_CONCISE_TYPE,
+				NULL,
+				0,
+				NULL,
+				&ssType));
+		
+		pThisBinding->fChar = (ssType == SQL_CHAR ||
+                                ssType == SQL_VARCHAR ||
+                                ssType == SQL_LONGVARCHAR);
+
+		pThisBinding->sNext = NULL;
+
+		// Arbitrary limit on display size
+		if (cchDisplay > DISPLAY_MAX)
+			cchDisplay = DISPLAY_MAX;
+
+		// Allocate a buffer big enough to hold the text representation
+		// of the data. Add one character for the null terminator
+		pThisBinding->wszBuffer = (WCHAR*)malloc((cchDisplay+1)*sizeof(WCHAR));
+
+		if (!(pThisBinding->wszBuffer))
+        {
+            fwprintf(stderr, L"Out of memory!\n");
+            exit(-100);
+        }
+
+        // Map this buffer to the driver's buffer.   At Fetch time,
+        // the driver will fill in this data.  Note that the size is
+        // count of bytes (for Unicode).  All ODBC functions that take
+        // SQLPOINTER use count of bytes; all functions that take only
+        // strings use count of characters.
+
+		TRYODBC(hStmt,
+                SQL_HANDLE_STMT,
+                SQLBindCol(hStmt,
+                    iCol,
+                    SQL_C_TCHAR,
+                    (SQLPOINTER) pThisBinding->wszBuffer,
+                    (cchDisplay + 1) * sizeof(WCHAR),
+                    &pThisBinding->indPtr));
+		
+		// Now set the display size that we will use to display
+        // the data.   Figure out the length of the column name
+
+        TRYODBC(hStmt,
+                SQL_HANDLE_STMT,
+                SQLColAttribute(hStmt,
+                    iCol,
+                    SQL_DESC_NAME,
+                    NULL,
+                    0,
+                    &cchColumnNameLength,
+                    NULL));
+
+		pThisBinding->cDisplaySize = fmax((SQLSMALLINT)cchDisplay, cchColumnNameLength);
+		if (pThisBinding->cDisplaySize < NULL_SIZE)
+			pThisBinding->cDisplaySize = NULL_SIZE;
+
+		*pDisplay += pThisBinding->cDisplaySize + DISPLAY_FORMAT_EXTRA;
+	}
+}
+
 void DisplayResults(HSTMT hStmt,
 					SQLSMALLINT cCols)
 {
-	wprintf(L"cols = %d", cCols);
+	wprintf(L"cols = %d\n", cCols);
+
+	bool noError = true;
 	BINDING *pFirstBinding, *pThisBinding;
 	SQLSMALLINT cDisplaySize;
 	RETCODE RetCode = SQL_SUCCESS;
@@ -70,6 +257,89 @@ void DisplayResults(HSTMT hStmt,
 	// Allocate memory for each column
 	AllocateBindings(hStmt, cCols, &pFirstBinding, &cDisplaySize);
 	
+	// Set the display mode and write the titles
+	DisplayTitles(hStmt, cDisplaySize+1, pFirstBinding);
+
+	// Fetch and display the data
+	bool fNoData = false;
+	do {
+		// Fetch a row
+		if (iCount++ >= gHeight - 2)
+		{
+			int nInputChar;
+			bool fEnterReceived = false;
+			
+			while(!fEnterReceived)
+			{
+				wprintf(L"              ");
+                wprintf(L"   Press ENTER to continue, Q to quit (height:%hd)", gHeight);
+
+				nInputChar = scanf("%c");
+                wprintf(L"\n");
+                if ((nInputChar == 'Q') || (nInputChar == 'q'))
+                {
+                    goto Exit;
+                }
+                else if ('\r' == nInputChar)
+                {
+                    fEnterReceived = true;
+                }
+                // else loop back to display prompt again
+			}
+
+			iCount = 1;
+			DisplayTitles(hStmt, cDisplaySize+1, pFirstBinding);
+		}
+
+		TRYODBC(hStmt, SQL_HANDLE_STMT, RetCode = SQLFetch(hStmt));
+
+		if (!noError)
+			goto Exit;
+
+		if (RetCode == SQL_NO_DATA_FOUND)
+        {
+            fNoData = true;
+        }
+        else
+		{
+			// Display the data, Ignore truncations
+			for (pThisBinding = pFirstBinding;
+				pThisBinding;
+				pThisBinding = pThisBinding->sNext)
+			{
+				if (pThisBinding->indPtr != SQL_NULL_DATA)
+                {
+                    wprintf(pThisBinding->fChar ? DISPLAY_FORMAT_C:DISPLAY_FORMAT,
+                        PIPE,
+                        pThisBinding->cDisplaySize/2,
+                        pThisBinding->cDisplaySize/2,
+                        pThisBinding->wszBuffer);
+                }
+                else
+                {
+                    wprintf(DISPLAY_FORMAT_C,
+                        PIPE,
+                        pThisBinding->cDisplaySize/2,
+                        pThisBinding->cDisplaySize/2,
+                        L"<NULL>");
+                }
+				wprintf(L" %c\n",PIPE);
+			}
+		}
+	} while(!fNoData);
+
+	wprintf(L"%*.*s", cDisplaySize+2, cDisplaySize+2, L" ");
+    wprintf(L"\n");
+
+Exit:
+	// Clean up the allocated buffers
+	while(pFirstBinding)
+	{
+		pThisBinding = pFirstBinding->sNext;
+		free(pFirstBinding->wszBuffer);
+		free(pFirstBinding);
+		pFirstBinding = pThisBinding;
+	}
 }
 
 bool Connect(lpcwstr connStr)
