@@ -111,8 +111,8 @@ void DisplayTitles(HSTMT    hStmt,
 		{
 			wprintf(DISPLAY_FORMAT_C,
 		             PIPE,
-		             pBinding->cDisplaySize/2,
-		             pBinding->cDisplaySize/2,
+		             pBinding->cDisplaySize,
+		             pBinding->cDisplaySize,
 		             wszTitle);
 		}
 	}
@@ -309,18 +309,18 @@ void DisplayResults(HSTMT hStmt,
 			{
 				if (pThisBinding->indPtr != SQL_NULL_DATA)
                 {
-                    wprintf(pThisBinding->fChar ? DISPLAY_FORMAT_C:DISPLAY_FORMAT,
+                    wprintf(pThisBinding->fChar ? DISPLAY_FORMAT_C : DISPLAY_FORMAT,
                         PIPE,
-                        pThisBinding->cDisplaySize/2,
-                        pThisBinding->cDisplaySize/2,
+                        pThisBinding->cDisplaySize,
+                        pThisBinding->cDisplaySize,
                         pThisBinding->wszBuffer);
                 }
                 else
                 {
                     wprintf(DISPLAY_FORMAT_C,
                         PIPE,
-                        pThisBinding->cDisplaySize/2,
-                        pThisBinding->cDisplaySize/2,
+                        pThisBinding->cDisplaySize,
+                        pThisBinding->cDisplaySize,
                         L"<NULL>");
                 }
 				wprintf(L" %c\n",PIPE);
@@ -504,8 +504,11 @@ void HandleDiagnosticRecord (SQLHANDLE      hHandle,
 
 int main(int argc, const char** args)
 {
+	wprintf(L"wchar = %d, short = %d\n", sizeof(wchar_t), sizeof(unsigned short));
+
 	wchar_t buf[100];
 	swprintf(buf, sizeof(buf), L"Driver=FreeTDS;Server=%S;Port=%d;UID=%S;PWD=%S;Database=%S;", L"192.168.8.198", 1433, L"sa", L"Dd123", L"Main");
+	
 	if (!Connect(buf))
 		return -1;
 

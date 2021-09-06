@@ -481,7 +481,18 @@ void	TPARAM_SQL::serial(SIPBASE::IStream &s)
 		case 's':	{std::string strParam = (char *)_param;	s.serial(strParam);}	break;
 		case 'S':	
 			{
-				ucstring ucParam = (wchar_t *)_param;	s.serial(ucParam);
+#ifdef SIP_OS_WINDOWS
+				ucstring ucParam = (wchar_t *)_param;
+#else
+				ucstring ucParam;
+				char16_t* params = (char16_t*)_param;
+				int length = std::char_traits<char16_t>::length(params);
+				for (int i = 0; i < length; i++)
+				{
+					ucParam += params[i];
+				}
+#endif
+				s.serial(ucParam);
 			}
 				break;
 
