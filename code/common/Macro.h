@@ -456,7 +456,7 @@ enum TRoomChannelStatus
 
 #define 	ROOM_LEVEL_MAX					81		// 1 - 81
 #define 	FAMILY_LEVEL_MAX				199		// 1 - 199
-#define 	FISH_LEVEL_MAX					37		// 1 - 37 : 이 값을 수정하면 ServerInfo.xml의 [养鱼等级信息]쉬트, MiscInfo.xml의 [养鱼等级信息]쉬트도 같이 수정해야 한다.
+#define 	FISH_LEVEL_MAX					49		// 1 - 37 : 이 값을 수정하면 ServerInfo.xml의 [养鱼等级信息]쉬트, MiscInfo.xml의 [养鱼等级信息]쉬트도 같이 수정해야 한다.
 //#define 	ROOMFISH_LEVEL_MAX				10		// 1 - 10
 //#define		FISH_INDEX_MAX					16		// 0 - 15
 
