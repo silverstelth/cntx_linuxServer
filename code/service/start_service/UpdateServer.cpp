@@ -850,7 +850,8 @@ static void	DBCB_LoadDBLastVersionInfo(int nQueryResult, uint32 argn, void *argv
 
 		_entryAppLastVersion	info(idApp, ucCorrectNameApp, lastVersion);
 		_newVersions.insert(std::make_pair(ucCorrectNameApp, info));
-		sipdebug(L"Add last version info:App=%s, ID=%d, Lastversion=%S", ucCorrectNameApp.c_str(), idApp, lastVersion.c_str());
+		sipinfo("Add last version info:App=%S, ID=%d, Lastversion=%s", ucCorrectNameApp.c_str(), idApp, lastVersion.c_str());
+		// sipdebug(L"Add last version info:App=%S, ID=%d, Lastversion=%s", ucCorrectNameApp.c_str(), idApp, lastVersion.c_str());
 	};
 	sipdebug("Load DBLastVersionInfo, rownum : %u", uRowNum);
 
