@@ -251,7 +251,7 @@ bool MakeUpdateInfo( CMessage& msgin, uint32 nNetworkPart, CMessage &msgout )
 		msgout.serial(strNull);
 		msgout.serial(strNull);
 		msgout.serial(strNull);
-		sipinfo(L"<UPDATE> Success! Produce:<%s>, Version:<%S> -> lastversion:<%S>, serverURL:<NULL>, serverPort:<NULL>, Path:<NULL>, userID:<NULL>, password:<NULL>",
+		sipinfo("<UPDATE> Success! Produce:<%S>, Version:<%s> -> lastversion:<%s>, serverURL:<NULL>, serverPort:<NULL>, Path:<NULL>, userID:<NULL>, password:<NULL>",
 			uckeyProductName.c_str(), sVersionNo.c_str(), sNewVersionNo.c_str());
 
 		return true;
@@ -264,7 +264,7 @@ bool MakeUpdateInfo( CMessage& msgin, uint32 nNetworkPart, CMessage &msgout )
 		if ( !FindPatch(uckeyProductName, sVersionNo, sDstVersionNo, newServerNo, sPath, nNetworkPart) )
 			if ( !FindNewPatch(uckeyProductName, sNewVersionNo, sNewVersionNo, newServerNo, sPath, nNetworkPart) )
 			{
-				sipwarning(L"There is no Patch Path for Product:<%s>, Version:<%S>, So NoReply<UPDATE>", uckeyProductName.c_str(), sVersionNo.c_str());
+				sipwarning("There is no Patch Path for Product:<%S>, Version:<%s>, So NoReply<UPDATE>", uckeyProductName.c_str(), sVersionNo.c_str());
 				return false;
 			}
 
