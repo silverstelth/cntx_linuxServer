@@ -522,8 +522,9 @@ std::vector<CInetAddress> CInetAddress::localAddresses()
 		if ((ifa_tmp->ifa_addr) && (ifa_tmp->ifa_addr->sa_family == AF_INET))
 		{
 			std::string ethName = std::string(ifa_tmp->ifa_name);
-			if (ethName.substr(0, 3).compare(std::string("ens")) == 0 ||
-				ethName.compare(std::string("lo")) == 0)
+			if (ethName.find("vmnet") == string::npos &&
+				ethName.find("virbr") == string::npos &&
+				ethName.find("tun") == string::npos)
 			{
 				CInetAddress cInetAddr;
 				cInetAddr.setSockAddr((struct sockaddr_in*)ifa_tmp->ifa_addr);
