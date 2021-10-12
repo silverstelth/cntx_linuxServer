@@ -14,6 +14,8 @@
 #include <arpa/inet.h>
 #include "type.h"
 
+using namespace std;
+
 /***************************************/
 /* Macro to call ODBC functions and    */
 /* report an error on failure.         */
@@ -524,21 +526,40 @@ void GetIPAddress()
             tmpAddrPtr=&((struct sockaddr_in *)ifa->ifa_addr)->sin_addr;
             char addressBuffer[INET_ADDRSTRLEN];
             inet_ntop(AF_INET, tmpAddrPtr, addressBuffer, INET_ADDRSTRLEN);
-            printf("%s IP Address %s\n", ifa->ifa_name, addressBuffer); 
+            wprintf(L"%s IP Address %s\n", ifa->ifa_name, addressBuffer); 
         } else if (ifa->ifa_addr->sa_family == AF_INET6) { // check it is IP6
             // is a valid IP6 Address
             tmpAddrPtr=&((struct sockaddr_in6 *)ifa->ifa_addr)->sin6_addr;
             char addressBuffer[INET6_ADDRSTRLEN];
             inet_ntop(AF_INET6, tmpAddrPtr, addressBuffer, INET6_ADDRSTRLEN);
-            printf("%s IP Address %s\n", ifa->ifa_name, addressBuffer); 
+            wprintf(L"%s IP Address %s\n", ifa->ifa_name, addressBuffer); 
         } 
     }
     if (ifAddrStruct!=NULL) freeifaddrs(ifAddrStruct);
 }
 
-
+static wchar_t str_buf[200 * 2+20];
+static uint8 buf[200] = {0,1,0,0,5,6,'b',0,0,'a',0,0,0,1,0,0};
+//303130303563
 int main(int argc, const char** args)
 {
+	//wchar_t test[100];
+	//char test_str = 'a';
+	//short  dd=20;
+	//swprintf(test, 100, L"%2x",test_str);
+	//test[3] = L'\0';
+	//wprintf(L"%ls %x %x %x\n", test, test[0],test[1],test[2]);
+
+	for (int i = 0; i < 10; i++)
+	{
+		swprintf(&str_buf[i*2], 4, L"%02x", buf[i]);
+//str_buf[i] = (buf[i]>='a' && buf[i]<='z')?buf[i]:buf[i]+'0';
+		wprintf(L"%ls,%4x\t", &str_buf[i], str_buf[i]);
+	}
+//wprintf(L"%c,%x\t", str_buf[0], str_buf[0]);
+	wprintf(L"\nhere: %ls\n", str_buf);
+ 	wprintf(L"hi test\n");
+
 	// wprintf(L"wchar = %d, short = %d\n", sizeof(wchar_t), sizeof(unsigned short));
 
 	/*

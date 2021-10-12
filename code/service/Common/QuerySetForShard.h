@@ -124,7 +124,7 @@
 // Save Inven Items of Family
 #define MAKEQUERY_SaveFamilyInven(strQ, FID, Data)														\
 	tchar strQ[4500] = _t("");																		\
-	SIPBASE::smprintf(strQ, 4500, _t("{call Shrd_Item_InsertAndUpdate(%d, 0x%s, ?)}"), FID, Data);
+	SIPBASE::smprintf(strQ, 4500, _t("{call Shrd_Item_InsertAndUpdate(%d, 0x%S, ?)}"), FID, Data);
 
 // Add Item SellCount
 #define MAKEQUERY_AddItemSellCount(strQ, ItemID, SellCount)															\

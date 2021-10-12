@@ -766,7 +766,7 @@ bool ApplyInvenChange(uint32 FID, uint16 *DressInvenPos, uint64 *DressGetDate, C
 	return i;
 }*/
 
-// Inven처리
+// Inven process
 // [d:SyncCode][b:ReqType][b:count][b:DelCount][[w:Inven position][w:Item Count][d:subtypeid][q:Getting time][d:Using CH id][b:MoneyType]][[w:Item Count][d:subtypeid][q:Getting time][b:MoneyType][b:DelType]]
 void	cb_M_CS_INVENSYNC(CMessage &_msgin, const std::string &_serviceName, TServiceId _tsid)
 {
@@ -806,7 +806,7 @@ void	cb_M_CS_INVENSYNC(CMessage &_msgin, const std::string &_serviceName, TServi
 				return;
 			}
 
-			// 보내기
+			// send
 			CMessage	msgOut(M_SC_FAMILYITEM);
 			msgOut.serial(FID, SyncCode);
 
@@ -860,7 +860,7 @@ void	cb_M_CS_INVENSYNC(CMessage &_msgin, const std::string &_serviceName, TServi
 		sipwarning("FID=%d, ReqType=%d, Result=%d", FID, ReqType, ret);
 }
 
-// 아이템사기
+// buying Items
 // Buy item([b:MoneyType,1:UMoney,2:Point][b:Number][ [w:Inven pos][d:Item id][w:Count] ])
 void	cb_M_CS_BUYITEM(CMessage &_msgin, const std::string &_serviceName, TServiceId _tsid)
 {

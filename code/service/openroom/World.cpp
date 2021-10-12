@@ -145,24 +145,24 @@ TUnifiedCallbackItem WorldCallbackArray[] =
 	//{ M_SC_BANKITEM_LIST,		cb_M_SC_BANKITEM_LIST },
 	//{ M_MS_BANKITEM_GET,		cb_M_MS_BANKITEM_GET },
 
-	// ??—¢? çŽ«è§„æ‰??
+	// ??ï¿½ï¿½?ï¿½çŽ«è§„æ‰??
 	//{ M_CS_RECOMMEND_ROOM,		cb_M_CS_RECOMMEND_ROOM },
 
-	// ?¼æƒ‘??
+	// ?ï¿½æƒ‘??
 	{ M_CS_ANCESTOR_TEXT_SET,		cb_M_CS_ANCESTOR_TEXT_SET },
 	{ M_CS_ANCESTOR_DECEASED_SET,	cb_M_CS_ANCESTOR_DECEASED_SET },
 
-	// ±â³äÀÏÈ°µ¿°ü·Ã
+	// ï¿½ï¿½ï¿½ï¿½ï¿½È°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{ M_NT_CURRENT_ACTIVITY,		cb_M_NT_CURRENT_ACTIVITY },
 	{ M_CS_REQ_ACTIVITY_ITEM,		cb_M_CS_REQ_ACTIVITY_ITEM },
 	{ M_MS_SET_USER_ACTIVITY,		cb_M_MS_SET_USER_ACTIVITY },
 
-	// ½ÃÀÛ»ç¿ëÀÚ¾ÆÀÌÅÛ
+	// ï¿½ï¿½ï¿½Û»ï¿½ï¿½ï¿½Ú¾ï¿½ï¿½ï¿½ï¿½ï¿½
 	{ M_NT_BEGINNERMSTITEM,			cb_M_NT_BEGINNERMSTITEM },
 	{ M_CS_RECV_GIFTITEM,			cb_M_CS_RECV_GIFTITEM },
 	{ M_MS_SET_USER_BEGINNERMSTITEM,cb_M_MS_SET_USER_BEGINNERMSTITEM },
 
-	// ?¤ä¾©ç£Šå•Š ç»µæ±—å¢¨é›???¤ä¾©çªçœ‹ä¿?
+	// ?ï¿½ä¾©ç£Šå•Š ç»µæ±—å¢¨é›???ï¿½ä¾©çªçœ‹ï¿½?
 	{ M_NT_BLESSCARD_USED,			cb_M_NT_BLESSCARD_USED },
 
 	{ M_CS_AUTOPLAY_REQ_BEGIN,	cb_M_CS_AUTOPLAY_REQ_BEGIN },
@@ -181,7 +181,7 @@ TUnifiedCallbackItem WorldCallbackArray[] =
 
 	{ M_CS_REQ_MST_DATA,		cb_M_CS_REQ_MST_DATA },
 
-	// ¿¹¾àÇà»ç °æÇè°ªÃ³¸®¸¦ À§ÇÑ ÆÄÄÉÆ®
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½è°ªÃ³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®
 	{ M_NT_AUTOPLAY3_EXP_ADD_ONLINE,		cb_M_NT_AUTOPLAY3_EXP_ADD_ONLINE },
 	{ M_NT_AUTOPLAY3_EXP_ADD_OFFLINE,		cb_M_NT_AUTOPLAY3_EXP_ADD_OFFLINE },
 };
@@ -200,7 +200,7 @@ void init_WorldService()
 			ucstring(strDatabaseHost).c_str(),
 			ucstring(strDatabaseName).c_str());
 
-		// DBé¾‹å…???´è¾‘???¡ç˜¤?»å’¯??ä¸??˜å¤¸??ä¹æ‰??·©ä¿?4??1???æ²¥?„ä¿ƒ.
+		// DBé¾‹å…???ï¿½è¾‘???ï¿½ç˜¤?ï¿½å’¯??ï¿½??ï¿½å¤¸??ä¹æ‰??ï¿½ï¿½ï¿½?4??1???ï¿½æ²¥?ï¿½ä¿ƒ.
 		BOOL bSuccess = DBCaller->init(1);
 		if (!bSuccess)
 		{
@@ -266,7 +266,7 @@ void init_WorldService()
 	LoadDBMstData();
 	LoadHolidayList();
 
-	// 2ç¡…ç‰ˆæ°°æ‘¹?ç‰¢???«è¤
+	// 2ç¡…ç‰ˆæ°°æ‘¹?ï¿½ç‰¢???ï¿½è¤
 	CheckTodayHoliday();
 	CheckValidItemData();
 	CUnifiedNetwork::getInstance()->addCallbackArray(WorldCallbackArray, sizeof(WorldCallbackArray)/sizeof(WorldCallbackArray[0]));
@@ -566,7 +566,11 @@ bool SaveFamilyInven(T_FAMILYID FID, _InvenItems *pInven, bool bDBNormal)
 
 	for (uint32 i = 0; i < InvenBufSize; i ++)
 	{
+#ifdef SIP_OS_WINDOWS
 		smprintf((ucchar*)(&st_str_buf[i * 2]), 2, _t("%02x"), InvenBuf[i]);
+#else
+		smprintf((ucchar*)(&st_str_buf[i * 2]), 4, _t("%02x"), InvenBuf[i]);
+#endif
 	}
 	st_str_buf[InvenBufSize * 2] = 0;
 
@@ -587,6 +591,7 @@ bool SaveFamilyInven(T_FAMILYID FID, _InvenItems *pInven, bool bDBNormal)
 	}
 	*/
 	MAKEQUERY_SaveFamilyInven(strQ, FID, st_str_buf);
+
 	CDBConnectionRest	DB(DBCaller);
 	DB_EXE_PREPARESTMT(DB, Stmt, strQ);
 	if (!nPrepareRet)
@@ -898,7 +903,7 @@ void CWorld::ChangeFamilyExp(uint8 FamilyExpType, T_FAMILYID FID, uint32 ExpPara
 //		break;
 //	}
 
-	// 2ë°°ê²½?˜ì¼ ì²˜ë¦¬
+	// 2ë°°ê²½?ï¿½ì¼ ì²˜ë¦¬
 	if (g_bIsHoliday)
 		addExp *= 2;
 
@@ -939,7 +944,7 @@ void CWorld::ChangeFamilyExp(uint8 FamilyExpType, T_FAMILYID FID, uint32 ExpPara
 		// Notice to Client
 		SendFamilyProperty_Level(FamilyInfo.m_ServiceID, FID, FamilyInfo.m_Exp, FamilyInfo.m_Level);
 
-		// GMoney???½çª?‹ä¿ƒ.
+		// GMoney???ï¿½çª?ï¿½ä¿ƒ.
 		if (bLevelChanged)
 			SendFamilyProperty_Money(FamilyInfo.m_ServiceID, FID, FamilyInfo.m_nGMoney, FamilyInfo.m_nUMoney);
 	}
@@ -947,7 +952,7 @@ void CWorld::ChangeFamilyExp(uint8 FamilyExpType, T_FAMILYID FID, uint32 ExpPara
 //	return bExpChanged | (bExpHisChanged << 4);
 }
 
-// ?è…ç£ç‹¼ ?‘æ€•ç”« æ±²æ²¥?„ä¿ƒ
+// ?ï¿½è…ç£ç‹¼ ?ï¿½æ€•ç”« æ±²æ²¥?ï¿½ä¿ƒ
 void	CWorld::SetCharacterState(T_FAMILYID _FID, T_CHARACTERID _CHID, T_CH_DIRECTION _Dir, T_CH_X _X, T_CH_Y _Y, T_CH_Z _Z, ucstring _AniName, T_CH_STATE _State, T_FITEMID _HoldItem)
 {
 	map<T_FAMILYID,	INFO_FAMILYINROOM>::iterator	it = m_mapFamilys.find(_FID);
@@ -985,7 +990,7 @@ static void	DBCB_DBGetOwnManageRoom(int nQueryResult, uint32 argn, void *argv[],
 	uint32	nRows;	resSet->serial(nRows);
 	for(uint32 i = 0; i < nRows; i ++)
 	{
-		// Packet??è¾¨æž???ˆå…¬ è¾¨ç»¢è¾??‹æ‰¼è¾??Šè¾°ä¿?
+		// Packet??è¾¨æž???ï¿½å…¬ è¾¨ç»¢ï¿½??ï¿½æ‰¼ï¿½??ï¿½è¾°ï¿½?
 		if(msgOut.length() > 2500)
 		{
 			bEnd = 0;
@@ -1135,7 +1140,7 @@ uint32 CWorld::FamilyItemUsed(T_FAMILYID FID, T_FITEMPOS InvenPos, uint32 SyncCo
 	const	MST_ITEM	*mstItem = NULL;
 	if (!IsValidInvenPos(InvenPos))
 	{
-		// ?šè¿‡é¢‡çº³é£˜æƒ¯??
+		// ?ï¿½è¿‡é¢‡çº³é£˜æƒ¯??
 		ucstring ucUnlawContent = SIPBASE::_toString("Invalid InvenPos! UserFID=%d, InvenPos=%d", FID, InvenPos);
 		RECORD_UNLAW_EVENT(UNLAW_REMARK, ucUnlawContent, FID);
 		return 0;
@@ -1313,15 +1318,15 @@ void	cb_M_NT_RESCHECKIN(SIPNET::CMessage &_msgin, const std::string &_serviceNam
 
 
 //////////////////////////////////////
-// ¿¹¾àÇà»ç °æÇè°ªÃ³¸®
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½è°ªÃ³ï¿½ï¿½
 //////////////////////////////////////
 
 void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, ucstring &RoomName, 
 								uint32 CountPerDay, uint32 YishiTaocanItemID, uint32 XianbaoTaocanItemID, uint32 YangyuItemID, uint32 Param,
 								uint32 TianItemID, uint32 DiItemID)
 {
-	// Çà»ç: ¹°ÁÖ±â, ²Éµå¸®±â, ±æ»óµîµå¸®±â, ¹°°í±â¸ÔÀÌÁÖ±â, Ãµ¼öÀÇ½Ä, ¹°°ÇÅÂ¿ì±â, ÇÏ´ÃÀÇ½Ä, ¶¥ÀÇ½Ä
-	// Family_Exp_Type_Visitday, Family_Exp_Type_Visitroom - ÀÌ°Ç ÇÏÁö ¾Ê´Â°ÍÀ¸·Î ÇÏÀÚ!! (Family_Exp_Type_VisitroomÃ³¸®¿¡ ¹®Á¦ÀÖÀ½)
+	// ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½Ö±ï¿½, ï¿½Éµå¸®ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½å¸®ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½, Ãµï¿½ï¿½ï¿½Ç½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Â¿ï¿½ï¿½, ï¿½Ï´ï¿½ï¿½Ç½ï¿½, ï¿½ï¿½ï¿½Ç½ï¿½
+	// Family_Exp_Type_Visitday, Family_Exp_Type_Visitroom - ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½!! (Family_Exp_Type_VisitroomÃ³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 	// Family_Exp_Type_Flower_Water, Family_Exp_Type_XingLi, Family_Exp_Type_Memo, 
 	// Family_Exp_Type_Fish, Family_Exp_Type_Jisi_One, Family_Exp_Type_Xianbao
 
@@ -1332,8 +1337,8 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 	uint32	today = GetDBTimeDays();
 
 	uint8	FamilyExpType;
-	FamilyExpType = Family_Exp_Type_Flower_Water;	// ¹°ÁÖ±â 1¹ø
-	if (Param & 1)	// ¹°ÁÖ±â°¡ ÁøÇàµÇ¿´À¸¸é
+	FamilyExpType = Family_Exp_Type_Flower_Water;	// ï¿½ï¿½ï¿½Ö±ï¿½ 1ï¿½ï¿½
+	if (Param & 1)	// ï¿½ï¿½ï¿½Ö±â°¡ ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
 		if (today != FamilyInfo.m_FamilyExpHis[FamilyExpType].Day)
 		{
@@ -1348,7 +1353,7 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 		}
 	}
 
-	FamilyExpType = Family_Exp_Type_XingLi;	// ÀÎ»çµå¸®±â 1¹ø
+	FamilyExpType = Family_Exp_Type_XingLi;	// ï¿½Î»ï¿½å¸®ï¿½ï¿½ 1ï¿½ï¿½
 	if (mstFamilyExp[FamilyExpType].MaxCount > FamilyInfo.m_FamilyExpHis[FamilyExpType].Count)
 	{
 		if (today != FamilyInfo.m_FamilyExpHis[FamilyExpType].Day)
@@ -1361,8 +1366,8 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 		addExp += mstFamilyExp[FamilyExpType].Exp;
 	}
 
-	FamilyExpType = Family_Exp_Type_Memo;	// ±æ»óµîµå¸®±â 1¹ø
-	if (Param & 2)	// ±æ»óµîµå¸®±â°¡ ÁøÇàµÇ¿´À¸¸é
+	FamilyExpType = Family_Exp_Type_Memo;	// ï¿½ï¿½ï¿½ï¿½å¸®ï¿½ï¿½ 1ï¿½ï¿½
+	if (Param & 2)	// ï¿½ï¿½ï¿½ï¿½å¸®ï¿½â°¡ ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
 		if (today != FamilyInfo.m_FamilyExpHis[FamilyExpType].Day)
 		{
@@ -1377,7 +1382,7 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 		}
 	}
 
-	FamilyExpType = Family_Exp_Type_Fish;	// ¹°°í±â¸ÔÀÌÁÖ±â CountPerDay¹ø
+	FamilyExpType = Family_Exp_Type_Fish;	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ CountPerDayï¿½ï¿½
 	if (YangyuItemID != 0)
 	{
 		if (today != FamilyInfo.m_FamilyExpHis[FamilyExpType].Day)
@@ -1396,7 +1401,7 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 		}
 	}
 
-	FamilyExpType = Family_Exp_Type_Jisi_One;	// Ãµ¼öÀÇ½Ä CountPerDay¹ø
+	FamilyExpType = Family_Exp_Type_Jisi_One;	// Ãµï¿½ï¿½ï¿½Ç½ï¿½ CountPerDayï¿½ï¿½
 	if (YishiTaocanItemID != 0)
 	{
 		if (today != FamilyInfo.m_FamilyExpHis[FamilyExpType].Day)
@@ -1415,7 +1420,7 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 		}
 	}
 
-	FamilyExpType = Family_Exp_Type_Xianbao;	// ¹°°ÇÅÂ¿ì±â CountPerDay¹ø
+	FamilyExpType = Family_Exp_Type_Xianbao;	// ï¿½ï¿½ï¿½ï¿½ï¿½Â¿ï¿½ï¿½ CountPerDayï¿½ï¿½
 	if (XianbaoTaocanItemID != 0)
 	{
 		if (today != FamilyInfo.m_FamilyExpHis[FamilyExpType].Day)
@@ -1434,7 +1439,7 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 		}
 	}
 
-	FamilyExpType = Family_Exp_Type_ReligionYiSiMaster;	// ÇÏ´ÃÀÇ½Ä CountPerDay¹ø
+	FamilyExpType = Family_Exp_Type_ReligionYiSiMaster;	// ï¿½Ï´ï¿½ï¿½Ç½ï¿½ CountPerDayï¿½ï¿½
 	if (TianItemID != 0)
 	{
 		if (today != FamilyInfo.m_FamilyExpHis[FamilyExpType].Day)
@@ -1453,7 +1458,7 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 		}
 	}
 
-	FamilyExpType = Family_Exp_Type_ReligionYiSiMaster;	// ¶¥ÀÇ½Ä CountPerDay¹ø
+	FamilyExpType = Family_Exp_Type_ReligionYiSiMaster;	// ï¿½ï¿½ï¿½Ç½ï¿½ CountPerDayï¿½ï¿½
 	if (DiItemID != 0)
 	{
 		if (today != FamilyInfo.m_FamilyExpHis[FamilyExpType].Day)
@@ -1475,7 +1480,7 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 	if (addExp == 0)
 		return;
 
-	// 2¹è°æÇèÄ¡³¯
+	// 2ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½
 	if (g_bIsHoliday)
 		addExp *= 2;
 
@@ -1504,7 +1509,7 @@ void ChangeFamilyExpForAutoplay3(INFO_FAMILYINROOM &FamilyInfo, uint32 RoomID, u
 	DBLOG_CHFamilyExp(FamilyInfo.m_FID, FamilyInfo.m_Name, exp0, FamilyInfo.m_Exp, FamilyInfo.m_Level, 0, RoomID, RoomName, ItemInfo);
 }
 
-// ¿¹¾àÇà»ç¿¡ ÀÇÇÑ °æÇèÄ¡Áõ°¡ ÅëÁö LS->WS->MS->OROOM ([d:FID][d:YishiTimeMin][d:Autoplay3ID][d:RoomID][u:RoomName][d:CountPerDay][d:YishiTaocanItemID][d:XianbaoTaocanItemID][d:YangyuItemID][d:ItemID_Tian][d:ItemID_Di][d:Param])
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç¿¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ LS->WS->MS->OROOM ([d:FID][d:YishiTimeMin][d:Autoplay3ID][d:RoomID][u:RoomName][d:CountPerDay][d:YishiTaocanItemID][d:XianbaoTaocanItemID][d:YangyuItemID][d:ItemID_Tian][d:ItemID_Di][d:Param])
 void cb_M_NT_AUTOPLAY3_EXP_ADD_ONLINE(SIPNET::CMessage &_msgin, const std::string &_serviceName, SIPNET::TServiceId _tsid)
 {
 	uint32	FID, YishiTimeMin, Autoplay3ID, RoomID, CountPerDay, YishiTaocanItemID, XianbaoTaocanItemID, YangyuItemID, TianItemID, DiItemID, Param;
@@ -1528,11 +1533,11 @@ void cb_M_NT_AUTOPLAY3_EXP_ADD_ONLINE(SIPNET::CMessage &_msgin, const std::strin
 	}
 	INFO_FAMILYINROOM	&FamilyInfo = it->second;
 
-	// °æÇèÄ¡º¯°æ
+	// ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½
 	uint32	prevGMoney = FamilyInfo.m_nGMoney;
 	ChangeFamilyExpForAutoplay3(FamilyInfo, RoomID, RoomName, CountPerDay, YishiTaocanItemID, XianbaoTaocanItemID, YangyuItemID, Param, TianItemID, DiItemID);
 
-	// Client¿¡ ÅëÁö
+	// Clientï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	if (FamilyInfo.m_bFamilyExpDataChanged)
 	{
 		FamilyInfo.SaveFamilyExpData(FamilyInfo.m_nFamilyLevelChanged ? true : false);
@@ -1551,7 +1556,7 @@ void cb_M_NT_AUTOPLAY3_EXP_ADD_ONLINE(SIPNET::CMessage &_msgin, const std::strin
 		SendFamilyProperty_Money(FamilyInfo.m_ServiceID, FamilyInfo.m_FID, FamilyInfo.m_nGMoney, FamilyInfo.m_nUMoney);
 	}
 
-	// LS¿¡ ÅëÁö
+	// LSï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	{
 		CMessage	msgOut(M_NT_AUTOPLAY3_EXP_ADD_OK);
 		msgOut.serial(YishiTimeMin, Autoplay3ID);
@@ -1615,11 +1620,11 @@ static void	DBCB_DBLoadFamilyExpInfo(int nQueryResult, uint32 argn, void *argv[]
 		memset(&FamilyInfo.m_FamilyExpHis, 0, sizeof(FamilyInfo.m_FamilyExpHis));
 	}
 
-	// °æÇèÄ¡º¯°æ
+	// ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½
 	uint32	prevGMoney = FamilyInfo.m_nGMoney;
 	ChangeFamilyExpForAutoplay3(FamilyInfo, RoomID, RoomName, CountPerDay, YishiTaocanItemID, XianbaoTaocanItemID, YangyuItemID, Param, TianItemID, DiItemID);
 
-	// ÀÚ·áº¸°ü
+	// ï¿½Ú·áº¸ï¿½ï¿½
 	if (FamilyInfo.m_bFamilyExpDataChanged)
 	{
 		FamilyInfo.SaveFamilyExpData(true);
@@ -1633,7 +1638,7 @@ static void	DBCB_DBLoadFamilyExpInfo(int nQueryResult, uint32 argn, void *argv[]
 			OUT_,			NULL);
 	}
 
-	// LS¿¡ ÅëÁö
+	// LSï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	{
 		CMessage	msgOut(M_NT_AUTOPLAY3_EXP_ADD_OK);
 		msgOut.serial(YishiTimeMin, Autoplay3ID);
@@ -1641,7 +1646,7 @@ static void	DBCB_DBLoadFamilyExpInfo(int nQueryResult, uint32 argn, void *argv[]
 	}
 }
 
-// ¿¹¾àÇà»ç¿¡ ÀÇÇÑ °æÇèÄ¡Áõ°¡ ÅëÁö LS->OwnWS->MS->OROOM ([d:FID][d:YishiTimeMin][d:Autoplay3ID][d:RoomID][u:RoomName][d:CountPerDay][d:YishiTaocanItemID][d:XianbaoTaocanItemID][d:YangyuItemID][d:ItemID_Tian][d:ItemID_Di][d:Param])
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç¿¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ LS->OwnWS->MS->OROOM ([d:FID][d:YishiTimeMin][d:Autoplay3ID][d:RoomID][u:RoomName][d:CountPerDay][d:YishiTaocanItemID][d:XianbaoTaocanItemID][d:YangyuItemID][d:ItemID_Tian][d:ItemID_Di][d:Param])
 void cb_M_NT_AUTOPLAY3_EXP_ADD_OFFLINE(SIPNET::CMessage &_msgin, const std::string &_serviceName, SIPNET::TServiceId _tsid)
 {
 	uint32	FID, YishiTimeMin, Autoplay3ID, RoomID, CountPerDay, YishiTaocanItemID, XianbaoTaocanItemID, YangyuItemID, TianItemID, DiItemID, Param;
